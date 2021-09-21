@@ -15,7 +15,7 @@ export function GetData (props) {
             //console.log("sucsess"); 
             setData(newdata.features); 
             handleData();
-            console.log(newdata)
+           // console.log("the raw data is____",newdata)
         })
         .catch((error) => console.log("error"))
 
@@ -25,14 +25,14 @@ export function GetData (props) {
 
         const parkinglist = [];
         var parkingToAdd ={};
-        console.log("data: ",data)
+       
 
         if (data.length > 0){// data.length < 1
             data.map((park) =>{
                 parkingToAdd =
                 parkinglist.push({
                     parkingName: park.attributes.shem_chenyon,
-                    parkingLocation: {lat: park.geometry.x, lng: park.geometry.x},
+                    parkingLocation: {lat: park.geometry.x, lng: park.geometry.y},
                     parkingPrice: park.attributes.taarif_yom,
                     parkingOccupied: park.attributes.status_chenyon
                 })  
@@ -47,16 +47,16 @@ export function GetData (props) {
     }
 
     useEffect( () => {
-        console.log("Parking data is______",parking)
-        //props.GetData(parking);
+        //console.log("Parking data is______",parking)
+        props.GetData(parking);
         
     } , [parking]);
 
     
      useEffect( () => {
-        
          fetchData();
          
+
      } , []);
     
     

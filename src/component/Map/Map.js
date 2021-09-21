@@ -1,24 +1,47 @@
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
-import React from 'react';
+import React, { useEffect } from 'react';
+import Data from '../Data/Data'
 
+var dataList = [];
 
-function Smap () {
+ function getData (dataRecived) {
+    //get data from data page
+
+    dataList=dataRecived;
+    
+    console.log("sucsess passing data",dataList);
+    console.log(dataRecived);
+}
+
+function createMap () {
+    
     return (
         <GoogleMap
         defaultZoom={14}
-        defaultCenter={{lat: 32.0853, lng: 34.7818}}
+        defaultCenter={{lat: 32.0853, lng: 34.78118}}
         >
-        <Marker 
-        key = {1}
-        position= {{lat: 32.0853, lng: 34.7818}}
-        />
+        
         </GoogleMap>
     )
 }
 
-const WrappedMap = withScriptjs(withGoogleMap(Smap));
+const WrappedMap = withScriptjs(withGoogleMap(createMap));
+
+
+
 export function Map () {
    
+        
+    useEffect( () => {
+            
+        
+    } , []);
+
+    useEffect( () => {
+            
+        console.log("print when data was updated",dataList)    
+    } , [dataList]);
+
     return (
         <div style={{ width: "100vw", height: "100vh" }}>
             <WrappedMap
@@ -27,6 +50,7 @@ export function Map () {
         containerElement={<div style={{ height: `100%` }} />}
         mapElement={<div style={{ height: `100%` }} />}
       />
+                <Data GetData={getData} />
 
         </div>
     );
