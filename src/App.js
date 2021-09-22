@@ -4,7 +4,7 @@ import Data from './component/Data/Data';
 
 function App() {
   return (
-  <Data />
+  <Map />
   );
 }
 
