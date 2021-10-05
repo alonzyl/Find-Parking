@@ -6,12 +6,14 @@ import PlacesAutocomplete, {
   getLatLng
 } from "react-places-autocomplete";
 
-export function SearchBar() {
+export function SearchBar(props) {
+
   const [adress,setAdress] = useState("");
   const [Coordinates,setCorrdinates] = useState({
     lat:null,
     lng:null
   });
+
   const handleSelect = async (value) => {
     const results = await geocodeByAddress(value)
     const latLng = await getLatLng(results[0])
@@ -23,6 +25,10 @@ export function SearchBar() {
     console.log(adress)
   }
  
+  useEffect( () => {
+     props.parentCallBack(Coordinates) 
+
+  } , [Coordinates]);
 
   return (
   
@@ -32,43 +38,29 @@ export function SearchBar() {
       value = {adress} 
       onChange = {setAdress} 
       onSelect = {handleSelect}
+      className = "searchBar"
       >
 
-      {({getInputProps, suggestions, getSuggestionItemProps, loading}) => (
-        <div>
+    {({getInputProps, suggestions, getSuggestionItemProps, loading}) => (
+      <div>
+        <input {...getInputProps({placeholder: "Type adress", className:"searchbar"})} />
+        <div> 
 
-          <input {...getInputProps({placeholder: "Type adress"})} />
+          {loading? <div>...loading </div>:null}
+            {suggestions.map(suggestion => {
+              const style = {
+                backgroundColor: suggestion.active ? "#8ecae6" : "#fff"
+              };
 
-          <div> 
-            {loading? <div>...loading </div>:null}
-
-            
-              {suggestions.map(suggestion => {
-                const style = {
-                  backgroundColor: suggestion.active ? "#8ecae6" : "#fff"
-                };
-
-                return (
-                 
-                  <div {...getSuggestionItemProps(suggestion, { style })}>
-                    {suggestion.description}
-                  </div>
-                );
-              })}
-          </div>
+              return (
+                <div {...getSuggestionItemProps(suggestion, { style })}>
+                  {suggestion.description}
+                </div>);
+            })}
         </div>
-        
+      </div>
         )}
     </PlacesAutocomplete>
-
-
-
-
-
-
-
-      {/* <input type="text" placeholder="Location to" className = "searchBar-to"/> */}
-
     </div>
 
   );
