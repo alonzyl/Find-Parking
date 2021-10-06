@@ -20,21 +20,25 @@ export function NewMap (props) {
         </LoadScript>
     } , []);
 
-const addMarker = () => {
- 
-   
-}
-
     return (
         <div>
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
                 zoom={14}>
-{ /* markers */ }
-            <Marker 
-            position = {{lat:props.lat, lng:props.lng}}
-            />
+            {
+            ParkingData.Parking.map(parkign => (
+                <Marker 
+                    key= {parkign.Parking_Id}
+                    position={{                     
+                        lat: parkign.Coordinates.lat,                     
+                        lng: parkign.Coordinates.lng 
+                    }}
+                 />
+            ))
+            }
+            
+            
              </GoogleMap>
     </div>
   )
