@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'; 
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'; // google maps api 
+import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api'; // google maps api 
 import * as ParkingData from "../Data/Data.json" // parking data 
 
 const containerStyle = {
@@ -13,7 +13,11 @@ const center = {
 };
 
 export function NewMap (props) {
-   //load google maps api key 
+    const [selectedParking, setSelectedParking] = useState(null);
+ 
+
+
+    //load google maps api key 
     useEffect( () => {
         <LoadScript
              googleMapsApiKey="AIzaSyCkmUyo0Nh8AGWrG_QSKmGVyiBuGA528cM">
@@ -26,19 +30,36 @@ export function NewMap (props) {
                 mapContainerStyle={containerStyle}
                 center={center}
                 zoom={14}>
-            {
-            ParkingData.Parking.map(parkign => (
+            
+            { ParkingData.Parking.map(parkign => (
                 <Marker 
                     key= {parkign.Parking_Id}
                     position={{                     
                         lat: parkign.Coordinates.lat,                     
                         lng: parkign.Coordinates.lng 
                     }}
+                    onClick={() => {
+                        setSelectedParking(parkign);
+                        console.log(selectedParking)
+                     }}
                  />
             ))
             }
-            
-            
+            {selectedParking && (
+                <InfoWindow
+                    onCloseClick={() => {
+                        setSelectedParking(null);
+                    }}
+                    position={{
+                        lat: selectedParking.Coordinates.lat,
+                        lng: selectedParking.Coordinates.lng
+                    }}>
+                    <div>
+                        <h2>{selectedParking.Parking_Name}</h2>
+                        <h4>{selectedParking.Parking_Address}</h4>
+                    </div>
+                </InfoWindow>
+                )}
              </GoogleMap>
     </div>
   )
