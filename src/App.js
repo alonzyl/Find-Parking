@@ -1,15 +1,17 @@
 import './App.css';
 import Map from './component/Map/Map';
 import Data from './component/Data/Data';
-import SearchBar from './component/Search bar/SearchBar'
+import NewMap from './component/Map/NewMap'
+import SearchBar from './component/Search bar/SearchBar';
 import { useState } from 'react';
 
 
 
 function App() {
  const [mapGeoLocation,setmapGeoLocation] = useState({lat: 32.0853, lng: 34.78118})
- 
-  const handleCallBack = (childData) => {
+
+ //handle data recived from searchbar
+ const handleCallBack = (childData) => {
     setmapGeoLocation(childData)
   }
 
@@ -21,7 +23,8 @@ function App() {
         
       </div>
       <div className = "map">
-        <Map mapPosition = {mapGeoLocation}  />
+        {/* <Map mapPosition = {mapGeoLocation}  /> */}
+        <NewMap lat = {32.0853} lng = {34.78118}/>
         </div>
         
     </div>
