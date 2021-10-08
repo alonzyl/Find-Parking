@@ -7,16 +7,15 @@ const containerStyle = {
   height: '100vh'
 };
 
-const center = {
-  lat: 32.0853,
-  lng: 34.78118
-};
 
 export function NewMap (props) {
+  
     const [selectedParking, setSelectedParking] = useState(null);
- 
-
-
+    
+    const center = {
+        lat: props.lat,
+        lng: props.lng
+      };  
     //load google maps api key 
     useEffect( () => {
         <LoadScript
@@ -29,19 +28,20 @@ export function NewMap (props) {
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
-                zoom={14}>
+                zoom={props.zoomIn}>
             
             { ParkingData.Parking.map(parkign => (
                 <Marker 
                     key= {parkign.Parking_Id}
+                    
                     position={{                     
                         lat: parkign.Coordinates.lat,                     
                         lng: parkign.Coordinates.lng 
                     }}
                     onClick={() => {
                         setSelectedParking(parkign);
-                        console.log(selectedParking)
                      }}
+                     visible = {true}
                  />
             ))
             }
