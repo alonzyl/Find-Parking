@@ -60,6 +60,7 @@ export function NewMap (props) {
                     </div>
                 </InfoWindow>
                 )}
+                
              </GoogleMap>
     </div>
   )

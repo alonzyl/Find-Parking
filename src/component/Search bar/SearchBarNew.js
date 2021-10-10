@@ -2,20 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { GoogleMap, LoadScript, Marker, InfoWindow,Autocomplete } from '@react-google-maps/api'; // google maps api 
 
 export function SearchBarNew(props) {
+
 const [Coordinates,setCorrdinates] = useState({lat:null,lng:null});  
-
-var autocomplete = null;
-
+var autoComplete = null;
+var renewAutoComplete = null;
 const onLoad = (autocompleteOnLoad) => {
-  autocomplete=autocompleteOnLoad
+  autoComplete=autocompleteOnLoad
+  // renewAutoComplete = autocompleteOnLoad
 }
 
-const handleChange = async() => {
+const handleChange = async(value) => {
+  console.log("the auto complete is",autoComplete)
   setCorrdinates({
-    lat: autocomplete.getPlace().geometry.location.lat(),
-    lng: autocomplete.getPlace().geometry.location.lng()
+    lat: autoComplete.getPlace().geometry.location.lat(),
+    lng: autoComplete.getPlace().geometry.location.lng()
   })
-
 }
 
 useEffect(() => {

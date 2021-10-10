@@ -16,8 +16,11 @@ export function SearchBar(props) {
 
   const handleSelect = async (value) => {
     const results = await geocodeByAddress(value)
+    console.log("loook at meeee",value)
     const latLng = await getLatLng(results[0])
     setAdress(value)
+    console.log("this is the latlng",results[0].lat)
+
     setCorrdinates({
       lat: latLng.lat,
       lng: latLng.lng

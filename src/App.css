@@ -9,10 +9,10 @@
 
 }
 .searchBar {
-  background-color: white ;
-  flex: 0 0 20vw;
+  /* background-color: white ; */
+  flex: 0 0 30vw;
 }
 .map {
-  flex: 0 0 80vw;
+  flex: 0 0 70vw;
   overflow: auto;
 }

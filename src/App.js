@@ -4,6 +4,7 @@ import Data from './component/Data/Data';
 import NewMap from './component/Map/NewMap'
 import SearchBar from './component/Search bar/SearchBar';
 import SearchBarNew from './component/Search bar/SearchBarNew';
+import DistanceFinder from './component/DistanceFinder/DistanceFinder';
 import { useState } from 'react';
 
 
@@ -20,7 +21,7 @@ function App() {
   return (
     
     <div className = "holder-app">
-
+      {/* <DistanceFinder /> */}
       <div className = "searchBar"> 
         {/* <SearchBar parentCallBack={handleCallBack} /> */}
         <SearchBarNew parentCallBack={handleCallBack} />
