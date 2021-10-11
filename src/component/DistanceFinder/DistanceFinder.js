@@ -17,10 +17,10 @@ export function DistanceFinder() {
 
     const service = new google.maps.DistanceMatrixService();
     let listOfParking 
+    let shortestParkingList =[]
 
     const handleData = () => {
-        var datalength = Math.ceil(ParkingData.Parking.length/24) 
-        
+        var datalength = Math.ceil(ParkingData.Parking.length/24)
         for (var i=1; i<=datalength;i++){
             listOfParking = []
             
@@ -30,17 +30,16 @@ export function DistanceFinder() {
                     listOfParking.push(ParkingData.Parking[j*i].Coordinates)
                 }
             }
-
-            
+            const matrixOptions = {
+                destinations: listOfParking,
+                origins: [{ lat: 32.062867, lng: 34.763709 }],
+                travelMode: "WALKING",
+            }
+            service.getDistanceMatrix(matrixOptions, callback)            
         }
+        // findShortest(shortestParkingList)
     }
-    handleData()
-    const matrixOptions = {
-        destinations: listOfParking,
-        origins: [{ lat: 32.062867, lng: 34.763709 }],
-        travelMode: "WALKING",
-    }
-    service.getDistanceMatrix(matrixOptions, callback)
+    
 
 
     const findShortest = (response) => {
@@ -53,7 +52,7 @@ export function DistanceFinder() {
             }
         })
         return (minValue)
-        console.log("the shortest value ",minValue)
+
     }
     
 
@@ -62,15 +61,20 @@ export function DistanceFinder() {
         alert("Error with distance matrix");
         return;
         }
-        findShortest(response.rows[0])
+        console.log(response.rows[0])
+        shortestParkingList.push(findShortest(response.rows[0]))
+        console.log("the shortest list is",shortestParkingList)
         //console.log(response.rows[0].elements[2].duration.value);        
     }
 
+    useEffect(() => {
+	    handleData()
+    },[]);
 
     //return fucntion of distanceFinder 
     return (
         <div>
-            {handleData()}
+            
         </div>
     )
 }
