@@ -3,22 +3,12 @@ import React, { Component,useEffect,useState } from "react";
 import { GoogleMap, DistanceMatrixService } from "@react-google-maps/api";
 import * as ParkingData from "../Data/Data.json"; 
 
-     // <DistanceMatrixService
-    //             options={{
-    //             destinations: destinationListarr,
-    //             origins: [{ lat: 32.062867, lng: 34.763709 }],
-    //             travelMode: "WALKING",
-    //             }}
-    //             callback={(res) => {
-    //             console.log("RESPONSE", res);  
-    //             }}
-    // /> 
 export function DistanceFinder() {
 
     const service = new google.maps.DistanceMatrixService();
     let listOfParking 
     let shortestParkingList =[]
-
+    let closestParking
     const handleData = () => {
         var datalength = Math.ceil(ParkingData.Parking.length/24)
         for (var i=1; i<=datalength;i++){
@@ -37,22 +27,25 @@ export function DistanceFinder() {
             }
             service.getDistanceMatrix(matrixOptions, callback)            
         }
-        // findShortest(shortestParkingList)
+
     }
     
+   
 
-
-    const findShortest = (response) => {
-       let minValue =response.elements[0] // the first response 
-       
-        response.elements.map(individualResponse => {
+    const findShortestForCallBack = (response) => {
+        let minValue ={adress: response.destinationAddresses[0], duration: response.rows[0].elements[0].duration } // the first response 
+        
+        response.rows[0].elements.map((individualResponse,index) => {
+            console.log(index)
             if (minValue.duration.value>individualResponse.duration.value)
             {
-                minValue=individualResponse
+                minValue= {adress:response.destinationAddresses[index], duration:individualResponse.duration}
             }
         })
-        return (minValue)
+        
 
+        
+        return (minValue)
     }
     
 
@@ -61,24 +54,20 @@ export function DistanceFinder() {
         alert("Error with distance matrix");
         return;
         }
-        console.log(response.rows[0])
-        shortestParkingList.push(findShortest(response.rows[0]))
+        shortestParkingList.push(findShortestForCallBack(response))
         console.log("the shortest list is",shortestParkingList)
-        //console.log(response.rows[0].elements[2].duration.value);        
     }
 
     useEffect(() => {
 	    handleData()
     },[]);
 
-    //return fucntion of distanceFinder 
-    return (
-        <div>
-            
-        </div>
-    )
-}
+   
 
- 
+    //return fucntion of distanceFinder 
+    return  (shortestParkingList)
+
+
+}
 
 export default DistanceFinder;
