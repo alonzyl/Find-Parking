@@ -3,16 +3,17 @@ import React, { Component,useEffect,useState } from "react";
 import { GoogleMap, DistanceMatrixService } from "@react-google-maps/api";
 import * as ParkingData from "../Data/Data.json"; 
 
-export function DistanceFinder() {
+export function DistanceFinder(props) {
 
     const service = new google.maps.DistanceMatrixService();
-     
     let shortestParkingList =[]
     let closestParking = null
     let listOfParking
+
+    console.log("check 1-2",props.origin)
     const handleData = () => {
+
         var datalength = Math.ceil(ParkingData.Parking.length/24)
-        
         for (var i=1; i<=datalength;i++){
              listOfParking = []
             for (var j =1;j<=24;j++){
@@ -23,7 +24,7 @@ export function DistanceFinder() {
             }
             const matrixOptions = {
                 destinations: listOfParking,
-                origins: [{lat: 32.110710, lng: 34.802140}],
+                origins: [props.origin],
                 travelMode: "WALKING",
             }
             service.getDistanceMatrix(matrixOptions, callback)            
@@ -40,7 +41,6 @@ export function DistanceFinder() {
                 minValue= {adress:response.destinationAddresses[index], duration:individualResponse.duration}
             }
         })
-        
         return (minValue)
     }
     
@@ -61,7 +61,7 @@ export function DistanceFinder() {
 
     function callback(response, status) {
         if (status !== "OK") {
-        alert("Error with distance matrix");
+        alert("Error with distance matrix",status);
         return;
         }
         shortestParkingList.push(findShortestForCallBack(response))
@@ -69,9 +69,10 @@ export function DistanceFinder() {
     }
 
     useEffect(() => {
-      handleData()
-
-    },[]);
+        if (props.origin.lat !== null) {
+            handleData()
+        }
+    },[props]);
 
    
 
