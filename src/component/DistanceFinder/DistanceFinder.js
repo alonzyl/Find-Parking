@@ -7,32 +7,35 @@ export function DistanceFinder(props) {
 
     const service = new google.maps.DistanceMatrixService();
     let shortestParkingList =[]
-    let closestParking = null
     let listOfParking
+    let FinalParking 
+    let datalength
 
-    console.log("check 1-2",props.origin)
     const handleData = () => {
-
-        var datalength = Math.ceil(ParkingData.Parking.length/24)
+        
+         datalength = Math.ceil(ParkingData.Parking.length/24)
         for (var i=1; i<=datalength;i++){
              listOfParking = []
             for (var j =1;j<=24;j++){
                 if (ParkingData.Parking[j*i])
                 {
-                    listOfParking.push(ParkingData.Parking[j*i].Coordinates)
+                    listOfParking.push(ParkingData.Parking[j*i].Coordinates) // make a new list for fetching api 
                 }
+            
             }
+            // set destination and origin before fetching
             const matrixOptions = {
                 destinations: listOfParking,
                 origins: [props.origin],
                 travelMode: "WALKING",
             }
-            service.getDistanceMatrix(matrixOptions, callback)            
+            service.getDistanceMatrix(matrixOptions, callback) //fetch api    
         }
     }
     
 
     const findShortestForCallBack = (response) => {
+        
         let minValue ={adress: response.destinationAddresses[0], duration: response.rows[0].elements[0].duration } // the first response 
         
         response.rows[0].elements.map((individualResponse,index) => {
@@ -42,22 +45,26 @@ export function DistanceFinder(props) {
             }
         })
         return (minValue)
-    }
+    } 
     
     const shortestroute = (routeOption) => {
+        let closestParkinTemp = null
 
-        if (closestParking != null )
+        if (routeOption !== null )
         {
+            
             routeOption.map(route => {
-                if (closestParking.duration.value > route.duration.value) {
-                    closestParking = route
+                if (closestParkinTemp === null){
+                    closestParkinTemp = route
+                }
+                else if (closestParkinTemp.duration.value > route.duration.value) {
+                    closestParkinTemp = route
                 }
             })
-        } else {
-            closestParking = routeOption[0]
-        }
-        console.log("the shortest route is", closestParking)
+        
+        return closestParkinTemp
     }
+}
 
     function callback(response, status) {
         if (status !== "OK") {
@@ -65,14 +72,27 @@ export function DistanceFinder(props) {
         return;
         }
         shortestParkingList.push(findShortestForCallBack(response))
-        shortestroute(shortestParkingList);
+        if (shortestParkingList.length === datalength) {
+            console.log(shortestParkingList)
+            FinalParking = shortestroute(shortestParkingList)
+            console.log(FinalParking)
+        }
+        
     }
 
     useEffect(() => {
-        if (props.origin.lat !== null) {
-            handleData()
+        if (props.origin.lat !== null ) {
+            if (props.origin.lat !== 32.0853){
+                handleData()
+            }
         }
     },[props]);
+
+    useEffect(() => {
+        if (FinalParking){
+         console.log("we are finished?")
+        }
+    },[FinalParking]);
 
    
 
