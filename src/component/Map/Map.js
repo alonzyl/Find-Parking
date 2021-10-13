@@ -51,6 +51,7 @@ export function Map (props) {
 
   const [selectedParking, setSelectedParking] = useState(null);
   const [mapPosition, setMapPosition] = useState({lat: 32.0853, lng: 34.78118})
+  const [mapZoom,setMapZoom] = useState(15)
   const CreateMap = () => {
     
   return (
@@ -97,18 +98,19 @@ export function Map (props) {
       
     }
    } , [props]);
-    return (
-        <div style={{ width: "80vw", height: "100vh" }}>
-            <WrappedMap
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCkmUyo0Nh8AGWrG_QSKmGVyiBuGA528cM`}
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `100%` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-      />
+    // return (
+    //     <div style={{ width: "80vw", height: "100vh" }}>
+    //         <WrappedMap
+    //     googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCkmUyo0Nh8AGWrG_QSKmGVyiBuGA528cM`}
+    //     loadingElement={<div style={{ height: `100%` }} />}
+    //     containerElement={<div style={{ height: `100%` }} />}
+    //     mapElement={<div style={{ height: `100%` }} />}
+    //   />
                 
 
-        </div>
-    );
+    //     </div>
+    // )
+    return(<div></div>)
 }
 
 export default Map;
