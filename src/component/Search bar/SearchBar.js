@@ -1,73 +1,53 @@
-import './SearchBar.css';
 import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
-import PlacesAutocomplete, {
-  geocodeByAddress,
-  getLatLng
-} from "react-places-autocomplete";
+import { Autocomplete } from '@react-google-maps/api'; // google maps api 
+import './SearchBar.css';
+import DistanceFinder from '../DistanceFinder/DistanceFinder';
 
 export function SearchBar(props) {
 
-  const [adress,setAdress] = useState("");
-  const [Coordinates,setCorrdinates] = useState({
-    lat:null,
-    lng:null
-  });
+  const [destinationLocation,setDestinationLocation] = useState({lat:null,lng:null});  
+  const [originLocation,SetoriginLocation] = useState({lat:null,lng:null})
+  var autoComplete = null;
 
-  const handleSelect = async (value) => {
-    const results = await geocodeByAddress(value)
-    console.log("loook at meeee",value)
-    const latLng = await getLatLng(results[0])
-    setAdress(value)
-    console.log("this is the latlng",results[0].lat)
-
-    setCorrdinates({
-      lat: latLng.lat,
-      lng: latLng.lng
-    })
-    console.log(adress)
+  const onLoad = (autocompleteOnLoad) => {
+    autoComplete=autocompleteOnLoad
   }
- 
-  useEffect( () => {
-     props.parentCallBack(Coordinates) 
 
-  } , [Coordinates]);
+  const handleChange = async(value) => {
+    setDestinationLocation({
+      lat: autoComplete.getPlace().geometry.location.lat(),
+      lng: autoComplete.getPlace().geometry.location.lng()
+    })
+  }
 
-  return (
+  const handleCallBackOrigin = (childData) => {
+    SetoriginLocation(childData)
+  }
+
   
-    <div className = "holder">
-    
-    <PlacesAutocomplete 
-      value = {adress} 
-      onChange = {setAdress} 
-      onSelect = {handleSelect}
-      className = "searchBar"
+  //call back to parent to set the destination and the origin 
+  useEffect(() => {
+    if (originLocation.lat !== null){
+      props.parentCallBack({origin: originLocation , destination:destinationLocation})
+    }
+  },[originLocation]);
+
+
+  return (    
+    <div >
+      <Autocomplete
+        onLoad = {onLoad}
+        onPlaceChanged = {handleChange}
       >
+      <input  
+          type="text"
+          className = "destinationInput"
+          placeholder="Enter destination location"
+        />
+      </Autocomplete>
 
-    {({getInputProps, suggestions, getSuggestionItemProps, loading}) => (
-      <div>
-        <input {...getInputProps({placeholder: "Type adress", className:"searchbar"})} />
-        <div> 
-
-          {loading? <div>...loading </div>:null}
-            {suggestions.map(suggestion => {
-              const style = {
-                backgroundColor: suggestion.active ? "#8ecae6" : "#fff"
-              };
-
-              return (
-                <div {...getSuggestionItemProps(suggestion, { style })}>
-                  {suggestion.description}
-                </div>);
-            })}
-        </div>
-      </div>
-        )}
-    </PlacesAutocomplete>
+      {destinationLocation.lat !== null? <DistanceFinder origin = {destinationLocation} parentCallBack = {handleCallBackOrigin}  />:null}
     </div>
-
-  );
-} 
-  
-  export default SearchBar;
-  
+  )
+}
+export default SearchBar;

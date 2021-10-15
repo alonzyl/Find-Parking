@@ -22,7 +22,6 @@ export function DistanceFinder(props) {
                 {
                     listOfParking.push(ParkingData.Parking[j*i].Coordinates) // make a new list for fetching api 
                 }
-            
             }
             // set destination and origin before fetching
             const matrixOptions = {
@@ -52,7 +51,6 @@ export function DistanceFinder(props) {
 
         if (routeOption !== null )
         {
-            
             routeOption.map(route => {;
                 if (closestParkinTemp === null){
                     closestParkinTemp = route
@@ -74,7 +72,7 @@ export function DistanceFinder(props) {
         shortestParkingList.push(findShortestForCallBack(response))
         if (shortestParkingList.length === datalength) {
             console.log(shortestParkingList)
-        
+            console.log("the adress of the shortest parking is",shortestroute(shortestParkingList))
             var temp =  convertToGeo(shortestroute(shortestParkingList))
         }      
     }
@@ -93,16 +91,14 @@ export function DistanceFinder(props) {
 
     useEffect(() => {
         if (props.origin.lat !== null ) {
-            if (props.origin.lat !== 32.0853){
                 handleData()
-            }
         }
     },[props.origin]);
 
     useEffect(() => {
         if (finalParking){
             console.log("this is the final parking",finalParking)
-            props.parentCallBack(finalParking.adress)
+            props.parentCallBack(finalParking)
         }
     },[finalParking]);
 
