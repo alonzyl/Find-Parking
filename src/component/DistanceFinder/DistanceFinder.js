@@ -1,8 +1,6 @@
 /*eslint no-undef: 0*/
-import React, { Component,useEffect,useState } from "react";
-import { GoogleMap, DistanceMatrixService } from "@react-google-maps/api";
+import React, { useEffect,useState } from "react";
 import * as ParkingData from "../Data/Data.json"; 
-import FetchGeoLocation from '../Data/FetchGeoLocation'
 
 export function DistanceFinder(props) {
 
@@ -10,19 +8,22 @@ export function DistanceFinder(props) {
     let shortestParkingList =[]
     let listOfParking
     const [finalParking,setFinalParking] = useState(null)
-    let datalength
-
+    let datalength 
+    let templist = []
     const handleData = () => {
         
-         datalength = Math.ceil(ParkingData.Parking.length/24)
+        datalength = Math.ceil(ParkingData.Parking.length/24) //the length of data separted for fetch
         for (var i=1; i<=datalength;i++){
+            console.log("enter")
              listOfParking = []
             for (var j =1;j<=24;j++){
                 if (ParkingData.Parking[j*i])
                 {
+                    templist.push(ParkingData.Parking[j*i].Coordinates.lat)
                     listOfParking.push(ParkingData.Parking[j*i].Coordinates) // make a new list for fetching api 
                 }
             }
+            
             // set destination and origin before fetching
             const matrixOptions = {
                 destinations: listOfParking,
@@ -38,6 +39,7 @@ export function DistanceFinder(props) {
         let minValue ={adress: response.destinationAddresses[0], duration: response.rows[0].elements[0].duration } // the first response 
         
         response.rows[0].elements.map((individualResponse,index) => {
+            // console.log(response.destinationAddresses[index],individualResponse) // for error check print all parkings 
             if (minValue.duration.value>individualResponse.duration.value)
             {
                 minValue= {adress:response.destinationAddresses[index], duration:individualResponse.duration}
@@ -51,7 +53,7 @@ export function DistanceFinder(props) {
 
         if (routeOption !== null )
         {
-            routeOption.map(route => {;
+            routeOption.map(route => {
                 if (closestParkinTemp === null){
                     closestParkinTemp = route
                 }
@@ -66,26 +68,26 @@ export function DistanceFinder(props) {
 
     const callback = (response, status) => {
         if (status !== "OK") {
-            alert("Error with distance matrix",status);
+            alert(status ,"distance calc error");
             return;
         }
         shortestParkingList.push(findShortestForCallBack(response))
+        //if finished searching 
         if (shortestParkingList.length === datalength) {
             console.log(shortestParkingList)
             console.log("the adress of the shortest parking is",shortestroute(shortestParkingList))
             var temp =  convertToGeo(shortestroute(shortestParkingList))
+            console.log(templist)
         }      
     }
-
+    // convert adress to geo location 
     const convertToGeo =  (adress) => {
         fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + adress.adress + '&key=' + "AIzaSyCkmUyo0Nh8AGWrG_QSKmGVyiBuGA528cM")
         .then((response) => response.json())
         .then((responseJson) => {
             var temp = responseJson.results[0].geometry.location
-            setFinalParking(temp)
-            
-    })
-        
+            setFinalParking(temp)       
+        })
     }
     
 
