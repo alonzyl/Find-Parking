@@ -1,25 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { Autocomplete } from '@react-google-maps/api'; // google maps api 
-import './SearchBar.css';
 import DistanceFinder from '../DistanceFinder/DistanceFinder';
+import './SearchBar.css';
 
+var autoComplete = null;
 export function SearchBar(props) {
 
   const [destinationLocation,setDestinationLocation] = useState({lat:null,lng:null});  
   const [originLocation,SetoriginLocation] = useState({lat:null,lng:null})
-  var autoComplete = null;
-
+  
+  var temp 
   const onLoad = (autocompleteOnLoad) => {
     autoComplete=autocompleteOnLoad
+    temp = autocompleteOnLoad
   }
-
-  const handleChange = async(value) => {
+  //handle change of search bar 
+  const handleChange = async() => {
+    
     setDestinationLocation({
       lat: autoComplete.getPlace().geometry.location.lat(),
       lng: autoComplete.getPlace().geometry.location.lng()
     })
+    autoComplete = temp
   }
 
+  // callback to set origin location after calling distance finder
   const handleCallBackOrigin = (childData) => {
     SetoriginLocation(childData)
   }
@@ -38,6 +43,9 @@ export function SearchBar(props) {
       <Autocomplete
         onLoad = {onLoad}
         onPlaceChanged = {handleChange}
+         options={{
+        componentRestrictions: { country: "isr" },
+  }}
       >
       <input  
           type="text"

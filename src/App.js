@@ -1,12 +1,7 @@
 import './App.css';
 import { useState,useEffect } from 'react';
-import Map from './component/Map/Map';
-import NewMap from './component/Map/NewMap'
+import Map from './component/Map/Map'
 import SearchBar from './component/Search bar/SearchBar';
-import DistanceFinder from './component/DistanceFinder/DistanceFinder';
-import DirectionMap from './component/Direction Map/DirectionMap';
-import geogeo, { getgeo } from './component/Data/FetchGeoLocation'
-
 
 function App() {
 
@@ -19,7 +14,6 @@ function App() {
   const handleCallBack= (childData) => {
     SetoriginLocation(childData.origin)
     SetdestinationLocation(childData.destination)
-    console.log("the origin is ", childData.origin , "the destination is " , childData.destination , "from main")
    
   }
 
@@ -30,11 +24,9 @@ function App() {
         
         <div className = "searchBar"> 
          <SearchBar parentCallBack={handleCallBack} />
-         
         </div>
         <div className = "map">
-          {originLocation.lat === null?<NewMap lat = {32.0853} lng = {34.78118} zoomIn = {zoomIn} /> : < DirectionMap origin = {originLocation} destination={destinationLocation}/>}
-         
+          <Map origin = {originLocation} destination={destinationLocation} /> 
         </div>
       </div>
     );

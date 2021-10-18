@@ -13,10 +13,6 @@ export function DirectionMap(props) {
   
   
   
-  useEffect(() => {
-    
-  },[]);
-
   const directionsCallback = (response) => {
 
       if (response !== null) {
