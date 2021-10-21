@@ -40,12 +40,15 @@ export function SearchBar(props) {
 
   return (    
     <div >
+      <div>
+        <h2>Get Directions</h2>
+      </div>
       <Autocomplete
         onLoad = {onLoad}
         onPlaceChanged = {handleChange}
-         options={{
-        componentRestrictions: { country: "isr" },
-  }}
+        options={{
+          componentRestrictions: { country: "isr" },
+        }}
       >
       <input  
           type="text"

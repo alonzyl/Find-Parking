@@ -69,16 +69,20 @@ export function DistanceFinder(props) {
             console.log(shortestParkingList)
             console.log("the adress of the shortest parking is",shortestroute(shortestParkingList))
             convertToGeo(shortestroute(shortestParkingList))
+            
         }      
     }
 
     // convert adress to geo location 
     const convertToGeo =  (adress) => {
-        fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + adress.adress + '&key=' + "AIzaSyCkmUyo0Nh8AGWrG_QSKmGVyiBuGA528cM")
-        .then((response) => response.json())
-        .then((responseJson) => {
-            setFinalParking(responseJson.results[0].geometry.location)       
-        })
+      
+       ParkingData.Parking.map(park => {
+            if (park.Parking_adress_eng === adress.adress)
+            {
+                setFinalParking(park.Coordinates)
+                console.log("the adress is ", adress,"and the eng adress is ", park.Parking_adress_eng,park.Coordinates)
+            }
+       })
     }
     
     useEffect(() => {

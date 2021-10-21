@@ -4,7 +4,7 @@
             "Parking_Id": 1,
             "Parking_Name": "בזל",
             "Parking_Address": "אשתורי הפרחי 5 תל-אביב יפו",
-            "Parking_adress_eng":"",
+            "Parking_adress_eng":"Ashtori HaFarhi St 5, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום, ‡ ימים א`-ו`/שבת/ערבי חג/חג לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪",
             "Coordinates": {"lat":32.089541 , "lng":34.779882 }
     },
@@ -12,14 +12,16 @@
             "Parking_Id": 2,
             "Parking_Name": "תל - נורדאו",
             "Parking_Address": "פרישמן 28 תל-אביב יפו",
+            "Parking_adress_eng":"Druyanov St 5, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ה` משעה 07:00 ועד השעה 19:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, ימי ו` וערבי חג משעה 07:00 עד השעה 16:00",
             "taarif_layla": "משעה 19:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪, ימי ו` ו/או ערבי חג משעה 16:00 ועד 07:00 למחרת 24 ₪, שבת ו/או חג משעה 07:00 ועד 07:00 למחרת 24 ₪",
-            "Coordinates": {"lat":32.079533 , "lng":34.771557 }
+            "Coordinates": {"lat":32.079533 , "lng":34.771557}
     },
     {
             "Parking_Id": 3,
             "Parking_Name": "הארד",
             "Parking_Address": "הארד 2 תל-אביב יפו",
+            "Parking_adress_eng":"HaArad St 3, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ה` משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪",
             "Coordinates": {"lat":32.111255 , "lng":34.841524 }
     },
@@ -27,6 +29,7 @@
             "Parking_Id": 4,
             "Parking_Name": "גולדה - בית המשפט",
             "Parking_Address": "ברקוביץ 7 תל-אביב יפו",
+            "Parking_adress_eng":"Leonardo da Vinci St 30, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ה` משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪",
             "Coordinates": {"lat": 32.0772819519043, "lng":34.78434753417969 }
     },
@@ -34,6 +37,7 @@
             "Parking_Id": 5,
             "Parking_Name": "ברוריה",
             "Parking_Address": "יגאל אלון 151 תל-אביב יפו",
+            "Parking_adress_eng":"Yigal Alon St 151, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום,  ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב",
             "Coordinates": {"lat":32.077888 , "lng": 34.796703}
     },
@@ -41,6 +45,7 @@
             "Parking_Id": 6,
             "Parking_Name": "בני דן",
             "Parking_Address": "אוסישקין 7 תל-אביב יפו",
+            "Parking_adress_eng":"Ussishkin St 7, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום, ‡ ימים א`- ו`וערבי חג משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, ",
             "Coordinates": {"lat": 32.096025, "lng":34.777732 }
     },
@@ -48,6 +53,7 @@
             "Parking_Id": 7,
             "Parking_Name": "חברה חדשה",
             "Parking_Address": "חברה חדשה 9 תל-אביב יפו",
+            "Parking_adress_eng":"Khevra Khadasha St 7, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ו` משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪",
             "Coordinates": {"lat":32.085064 , "lng": 34.790688}
     },
@@ -55,6 +61,7 @@
             "Parking_Id": 8,
             "Parking_Name": "בוגרשוב",
             "Parking_Address": "בוגרשוב 14 תל-אביב יפו",
+            "Parking_adress_eng":"Bograshov St 14, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "החניון נסגר לחנייה מיום 16.6.19",
             "Coordinates": {"lat":32.076847 , "lng": 34.768681}
     },
@@ -62,6 +69,7 @@
             "Parking_Id": 9,
             "Parking_Name": "מירשם",
             "Parking_Address": "קלצ`קין 25 תל-אביב יפו",
+            "Parking_adress_eng":"Klatzkin St 25, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א-ש לשעה ראשונה או חלק ממנה  12ש\"ח, כל 1/4 שעה נוספת או חלק ממנה 3 ש\"ח ",
             "Coordinates": {"lat":32.117507 , "lng": 34.806859}
     },
@@ -69,20 +77,23 @@
             "Parking_Id": 10,
             "Parking_Name": "מיטשל - מרכז הסטודנטים",
             "Parking_Address": "לבנון חיים 70 תל-אביב יפו",
+            "Parking_adress_eng":"Chaim Levanon St 70, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א-ש לשעה ראשונה או חלק ממנה  12ש\"ח, כל 1/4 שעה נוספת או חלק ממנה 3 ש\"ח ",
-            "Coordinates": {"lat":32.1030853 , "lng": 34.7943149}
+            "Coordinates": {"lat":32.117533 , "lng": 34.801812}
     },
     {
             "Parking_Id": 11,
             "Parking_Name": "מדעי החברה",
             "Parking_Address": "קלאוזנר 2 תל-אביב יפו",
+            "Parking_adress_eng":"Dr George Wise St 303, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א-ש מ- 07:00 -07:00 למחרת לשעה ראשונה או חלק ממנה 10 ש\"ח, כל 1/4 שעה או חלק ממנה 2.5 ש\"ח. ",
-            "Coordinates": {"lat":32.110594 , "lng":34.802748 }
+            "Coordinates": {"lat":32.110590 , "lng":34.802739}
     },
     {
             "Parking_Id": 12,
             "Parking_Name": "חנה וסע ארלוזורוב",
             "Parking_Address": "על פרשת דרכים 1 תל-אביב יפו",
+            "Parking_adress_eng":"דרך נמיר מרדכי 6/128, Tel Aviv-Yafo, Israel",
             "Parking_Cost": " השהייה בחניון עד 15 דקות ללא תשלום,  ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב",
             "Coordinates": {"lat":32.082926 , "lng":34.794942 }
     },
@@ -90,6 +101,7 @@
             "Parking_Id": 13,
             "Parking_Name": "התחנה - מנשייה",
             "Parking_Address": "המרד פינת קויפמן יחזקאל 65 תל-אביב יפו",
+            "Parking_adress_eng":"Ovadya ha-Navi St 5, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום,  ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב ",
             "Coordinates": {"lat":32.0933914 , "lng":34.7778347 }
     },
@@ -97,6 +109,7 @@
             "Parking_Id": 14,
             "Parking_Name": "מפעל הפיס",
             "Parking_Address": "ליאונרדו דוינצ`י 5 תל-אביב יפו",
+            "Parking_adress_eng":"Malkhi Yisrael St 15, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א-ה 07:00 - 16:00 לשעה ראשונה או חלק ממנה 8 ₪, כל ¼ שעה נוספת או חלק ממנה 2 ₪, משעה 16:00 כניסה חד פעמית 16 ₪. ו-ש כניסה חד פעמית 16 ש\"ח  ",
             "Coordinates": {"lat":32.08088 , "lng": 34.78057}
     },
@@ -104,6 +117,7 @@
             "Parking_Id": 15,
             "Parking_Name": "דובנוב",
             "Parking_Address": "דובנוב 4 תל-אביב יפו",
+            "Parking_adress_eng":"Dubnov St 4, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ה` משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪",
             "Coordinates": {"lat":32.0741021 , "lng": 34.7839976}
     },
@@ -111,6 +125,7 @@
             "Parking_Id": 16,
             "Parking_Name": "סינרמה",
             "Parking_Address": "יצחק שדה 45 תל-אביב יפו",
+            "Parking_adress_eng":"45, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א'- ש' ערבי חג וחג בין השעות 07:00 בבוקר ועד 07:00 למחרת  20 ש\"ח לכניסה חד פעמית ",
             "Coordinates": {"lat":32.064643 , "lng":34.791972 }
     },
@@ -118,6 +133,7 @@
             "Parking_Id": 17,
             "Parking_Name": "בית האצ\"ל - החוף המערבי",
             "Parking_Address": "נחום גולדמן 3 תל-אביב יפו",
+            "Parking_adress_eng":"Nahum Goldmann St 3, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום, ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב ",
             "Coordinates": {"lat": 32.057122, "lng":34.757719 }
     },
@@ -125,6 +141,7 @@
             "Parking_Id": 18,
             "Parking_Name": "הברזל ",
             "Parking_Address": "הברזל 24 תל-אביב יפו",
+            "Parking_adress_eng":"HaBarzel St 24a, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "החניון נסגר לעבודות החל מה-10/11/2014 ",
             "Coordinates": {"lat":32.1089801 , "lng":34.8401937 }
     },
@@ -132,6 +149,7 @@
             "Parking_Id": 19,
             "Parking_Name": "נחושת",
             "Parking_Address": "הנחושת 22 תל-אביב יפו",
+            "Parking_adress_eng":"HaNechoshet St 10, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ו` 07:00 - 16:00 לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪, משעה 16:00 כניסה חד פעמית 20 ש\"ח. שבת כניסה חד פעמית 20 ש\"ח ",
             "Coordinates": {"lat": 32.1101137, "lng": 34.838261}
     },
@@ -139,6 +157,7 @@
             "Parking_Id": 20,
             "Parking_Name": "לסקוב",
             "Parking_Address": "לסקוב 13 תל-אביב יפו",
+            "Parking_adress_eng":"Laskov St 11, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א-ה משעה 07:00 - 16:00 לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪, משעה 16:00 כניסה חד פעמית 20 ₪. ו-ש כניסה חד פעמית 20 ש\"ח",
             "Coordinates": {"lat":32.072836 , "lng":34.783428 }
     },
@@ -146,13 +165,15 @@
             "Parking_Id": 21,
             "Parking_Name": "הצפירה 1",
             "Parking_Address": "הצפירה 2 תל-אביב יפו",
+            "Parking_adress_eng":"Yad Harutsim St 1, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ה` משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪",
-            "Coordinates": {"lat":32.0601806640625 , "lng":34.7838249206543 }
+            "Coordinates": {"lat":32.061635 , "lng":34.781280 }
     },
     {
             "Parking_Id": 22,
             "Parking_Name": "הצפירה 2",
             "Parking_Address": "הצפירה 8 תל-אביב יפו",
+            "Parking_adress_eng":"HaTsfira St 8, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ה` משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪",
             "Coordinates": {"lat":32.060558 , "lng":34.782629 }
     },
@@ -160,6 +181,7 @@
             "Parking_Id": 23,
             "Parking_Name": "ברושים - הנדסאים",
             "Parking_Address": "בן ישי 1 תל-אביב יפו",
+            "Parking_adress_eng":"",
             "Parking_Cost": "מחירון שעתי בימים א-ו/שבת/חג בין השעות 07:00 בבוקר ועד 07:00 בבוקר למחרת - סטודנט וסגל 6 ₪ לשעה מקסימום 24 ₪, אורחים 12 ₪ לשעה מקסימום 48 ₪",
             "Coordinates": {"lat":32.1058321 , "lng":34.8014886 }
     },
@@ -167,6 +189,7 @@
             "Parking_Id": 24,
             "Parking_Name": "רפואת שיניים 1",
             "Parking_Address": "קלצ`קין 6 תל-אביב יפו",
+            "Parking_adress_eng":"",
             "Parking_Cost": "ימים א`-ה` בין השעות 07:00 בבוקר עד לשעה 07:00 בבוקר למחרת כניסה חד פעמית 24 ₪",
             "Coordinates": {"lat":32.1181563 , "lng":34.8016537 }
     },
@@ -174,90 +197,95 @@
             "Parking_Id": 25,
             "Parking_Name": "רפואת שיניים 2",
             "Parking_Address": "קלצ`קין 4 תל-אביב יפו",
+            "Parking_adress_eng":"Klatzkin St 5, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`-ה` בין השעות 07:00 בבוקר עד לשעה 07:00 בבוקר למחרת כניסה חד פעמית 24 ₪",
-            "Coordinates": {"lat":32.1181563 , "lng": 34.8016537}
+            "Coordinates": {"lat":32.117458 , "lng": 34.803816}
     },
     {
             "Parking_Id": 26,
             "Parking_Name": "התרבות",
             "Parking_Address": "הוברמן 1 תל-אביב יפו",
+            "Parking_adress_eng":"Huberman St 1, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "מחירון שעתי בימים א-ה` בין השעות 07:00 ועד 16:00 שעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪,",
-            "Coordinates": {"lat":32.072959 , "lng":34.7804134 }
+            "Coordinates": {"lat":32.072100 , "lng":34.780111 }
     },
     {
             "Parking_Id": 27,
             "Parking_Name": "פלמ\"ח",
             "Parking_Address": "יגאל אלון 68 תל-אביב יפו",
+            "Parking_adress_eng":"Yigal Alon St 68, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום, ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב",
-            "Coordinates": {"lat":32.063232 , "lng": 34.792415}
+            "Coordinates": {"lat":32.062729 , "lng": 34.792395}
     },
     {
             "Parking_Id": 28,
             "Parking_Name": "גלי גיל",
-            "Parking_Address": "2370 מס` 3 תל-אביב יפו",
+            "Parking_Address": "פרשת דרכים 10, תל אביב",
+            "Parking_adress_eng":"Al Parashat Drakhim St 10, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "",
-            "Coordinates": {"lat":32.08088 , "lng":34.78057 }
-    },
-    {
-            "Parking_Id": 29,
-            "Parking_Name": "לולאה",
-            "Parking_Address": "2370 מס` 1 תל-אביב יפו",
-            "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום,  ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב",
-            "Coordinates": {"lat":32.0832016 , "lng":34.7962419 }
+            "Coordinates": {"lat":32.081744 , "lng":34.799768 }
     },
     {
             "Parking_Id": 30,
             "Parking_Name": "מרכזים",
             "Parking_Address": "הזרם 12 תל-אביב יפו",
+            "Parking_adress_eng":"HaYesod St 7, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א-ש כניסה חד פעמית 20 ש\"ח ",
-            "Coordinates": {"lat":32.05095 , "lng":34.766552 }
+            "Coordinates": {"lat":32.051032 , "lng":34.766877 }
     },
     {
             "Parking_Id": 31,
             "Parking_Name": "כרמל",
             "Parking_Address": "קלישר פינת הכרמל תל-אביב יפו",
+            "Parking_adress_eng":"Ya'avets St 1, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ו` וערבי חג משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, ימים א` ו` וערבי חג",
-            "Coordinates": {"lat":32.067176 , "lng": 34.767049}
+            "Coordinates": {"lat":32.066772 , "lng": 34.766509}
     },
     {
             "Parking_Id": 32,
             "Parking_Name": "מרד",
             "Parking_Address": "המרד 32 תל-אביב יפו",
+            "Parking_adress_eng":"HaMered St 32, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א-ה משעה 07:00 - 16:00 לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪, משעה 16:00 כניסה חד פעמית 20 ₪. ו-ש כניסה חד פעמית 20 ש\"ח",
-            "Coordinates": {"lat":32.063886 , "lng":34.764105 }
+            "Coordinates": {"lat":32.064165 , "lng":34.764276 }
     },
     {
             "Parking_Id": 33,
             "Parking_Name": "פנחס רוזן - כיתן",
             "Parking_Address": "פנחס רוזן תל-אביב יפו",
+            "Parking_adress_eng":"Pinkhas Rosen St 49, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום, ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב",
-            "Coordinates": {"lat":32.1070824 , "lng":34.8275929 }
+            "Coordinates": {"lat":32.112422 , "lng":34.824958 }
     },
     {
             "Parking_Id": 34,
             "Parking_Name": "תקומה",
             "Parking_Address": "המרד 36 תל-אביב יפו",
+            "Parking_adress_eng":"HaMered St 36, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום,  ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב",
-            "Coordinates": {"lat":32.064985 , "lng":34.765015 }
+            "Coordinates": {"lat":32.064542 , "lng":34.764856 }
     },
     {
             "Parking_Id": 35,
             "Parking_Name": "החשמל",
             "Parking_Address": "לבונטין 20 תל-אביב יפו",
+            "Parking_adress_eng":"Levontin St 18, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ה` משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪",
-            "Coordinates": {"lat":32.062209 , "lng":34.776254 }
+            "Coordinates": {"lat":32.062200 , "lng":34.776236 }
     },
     {
             "Parking_Id": 36,
             "Parking_Name": "גן הכובשים",
             "Parking_Address": "לוי יוסף גונדר 5 תל-אביב יפו",
+            "Parking_adress_eng":"Yosef Levi St 2, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום,  ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב",
-            "Coordinates": {"lat":32.066054 , "lng": 34.763018}
+            "Coordinates": {"lat":32.065958 , "lng": 34.764196}
     },
     {
             "Parking_Id": 37,
             "Parking_Name": "מונטיפיורי",
             "Parking_Address": "מונטיפיורי 5 תל-אביב יפו",
+            "Parking_adress_eng":"Montefiore St 5, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ה` משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪",
             "Coordinates": {"lat":32.06483 , "lng":34.769427 }
     },
@@ -265,132 +293,127 @@
             "Parking_Id": 38,
             "Parking_Name": "הרכבת",
             "Parking_Address": "הרכבת 20 תל-אביב יפו",
+            "Parking_adress_eng":"HaRakevet St 20, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪, משעה 16:00 כניסה חד פעמית 16 ₪.שישי שבת ערבי חג וחג כניסה חד פעמית 16 ש\"ח. ",
-            "Coordinates": {"lat":32.063204 , "lng":34.778012 }
+            "Coordinates": {"lat":32.063292 , "lng":34.778067 }
     },
     {
             "Parking_Id": 39,
             "Parking_Name": "רבניצקי",
             "Parking_Address": "רבניצקי 6 תל-אביב יפו",
+            "Parking_adress_eng":"Ravnitski St 6, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ה` משעה 06:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 06:00 למחרת כניסה חד פעמית 24 ₪",
-            "Coordinates": {"lat": 32.0658916, "lng": 34.7898806}
+            "Coordinates": {"lat": 32.066122, "lng": 34.789904}
     },
     {
             "Parking_Id": 40,
             "Parking_Name": "גלית",
             "Parking_Address": "וינגייט 3 - 1 תל-אביב יפו",
+            "Parking_adress_eng":"Wingate St 9, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "חד פעמי 20 ₪",
-            "Coordinates": {"lat":32.05997 , "lng":34.7907271 }
+            "Coordinates": {"lat":32.060212 , "lng":34.788296}
     },
     {
             "Parking_Id": 41,
             "Parking_Name": "הפארק - חברת גני יהושוע",
             "Parking_Address": "רוקח 94 תל-אביב יפו",
+            "Parking_adress_eng":"Rokach Blvd 94, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום,  ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב",
-            "Coordinates": {"lat":32.0940772 , "lng":34.8018358 }
+            "Coordinates": {"lat":32.105568 , "lng":34.813516 }
     },
     {
             "Parking_Id": 42,
             "Parking_Name": "גולפיטק - חברת גני יהושוע",
             "Parking_Address": "רוקח 80 תל-אביב יפו",
+            "Parking_adress_eng":"University Railway Station/Rokach Blvd, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום,  ‡ תעריף לכניסה חד פעמית 24 ₪, תקף ל-24 שעות מרגע כניסת הרכב",
-            "Coordinates": {"lat":32.102578 , "lng": 34.805312}
+            "Coordinates": {"lat":32.102607 , "lng": 34.806558}
     },
     {
             "Parking_Id": 43,
             "Parking_Name": "סמולרש",
             "Parking_Address": "ג`ורג` וייז 16 תל-אביב יפו",
+            "Parking_adress_eng":"Dr George Wise St 32-34, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום ‡ תעריף שעתי בכל ימות השבוע, לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ",
-            "Coordinates": {"lat": 32.1069265, "lng": 34.8049217}
+            "Coordinates": {"lat": 32.109333, "lng": 34.803654}
     },
     {
             "Parking_Id": 44,
             "Parking_Name": "רידינג מערב",
             "Parking_Address": "רוקח 7 תל-אביב יפו",
+            "Parking_adress_eng":"Tel Aviv Taxi Station Reading Terminal, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.061897 , "lng": 34.76268}
+            "Coordinates": {"lat":32.098870 , "lng": 34.778520}
     },
     {
             "Parking_Id": 45,
             "Parking_Name": "שרתון",
             "Parking_Address": "הנמל 1 תל-אביב יפו",
+            "Parking_adress_eng":"Nemal Tel Aviv St 8, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א`- ו` משעה 06:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 06:00 למחרת כניסה חד פעמית 24 ₪",
-            "Coordinates": {"lat":32.098858, "lng":34.773765 }
+            "Coordinates": {"lat":32.094292, "lng":34.772485 }
     },
     {
             "Parking_Id": 46,
             "Parking_Name": "גן הכובשים 2",
             "Parking_Address": "כובשים 80 תל אביב ",
+            "Parking_adress_eng":"Yosef Levi/HaKovshim, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א'- ש' בין השעות 07:00 בבוקר ועד 07:00 למחרת , 20 ש\"ח לכניסה חד פעמית",
-            "Coordinates": {"lat":32.08414 , "lng": 34.79995}
+            "Coordinates": {"lat":32.066116 , "lng":  34.763837}
     },
     {
             "Parking_Id": 47,
             "Parking_Name": "אבולעפיה",
             "Parking_Address": "קבוץ גלויות 36 תל-אביב יפו",
+            "Parking_adress_eng":"Kibbutz Galuyot Rd 45, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.051804,  "lng": 34.768061}
+            "Coordinates": {"lat":32.051914,  "lng": 34.767666}
     },
     {
             "Parking_Id": 48,
             "Parking_Name": "אחימאיר",
             "Parking_Address": "אחימאיר אבא 28 תל-אביב יפו",
+            "Parking_adress_eng":"Aba Akhime'ir St 28, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.124197 , "lng":34.8041 }
-    },
-    {
-            "Parking_Id": 49,
-            "Parking_Name": "אליפלט",
-            "Parking_Address": "אליפלט 4 תל-אביב יפו",
-            "Parking_Cost": "החניון נסגר !",
-            "Coordinates": {"lat": 32.055291, "lng": 34.765128}
+            "Coordinates": {"lat":32.124295 , "lng": 34.803830 }
     },
     {
             "Parking_Id": 50,
             "Parking_Name": "אלפסי",
             "Parking_Address": "אלפסי יצחק 12 תל-אביב יפו",
+            "Parking_adress_eng":"אלפסי יצחק 12 תל-אביב יפו, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.050374 , "lng":34.764153 }
-    },
-    {
-            "Parking_Id": 51,
-            "Parking_Name": "בית הדר א",
-            "Parking_Address": "יהודה הלוי 12 תל-אביב יפו",
-            "Parking_Cost": "ימים א`- ה` משעה 07:00 ועד השעה 16:00 לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪, משעה 16:00 עד השעה 07:00 למחרת כניסה חד פעמית 24 ₪",
-            "Coordinates": {"lat":32.061161 , "lng":34.768802 }
+            "Coordinates": {"lat":32.050352 , "lng":34.764193 }
     },
     {
             "Parking_Id": 52,
             "Parking_Name": "בית החייל",
             "Parking_Address": "עקיבה אריה 31 תל-אביב יפו",
+            "Parking_adress_eng":"Arieh Akiva St 31, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.090601 , "lng":34.791754 }
+            "Coordinates": {"lat":32.090625 , "lng":34.791771 }
     },
     {
             "Parking_Id": 53,
             "Parking_Name": "בית צורי",
             "Parking_Address": "בית צורי 20 תל-אביב יפו",
+            "Parking_adress_eng":"Eliyahu Beit Tsuri St 20, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat": 32.122731, "lng": 34.80069}
-    },
-    {
-            "Parking_Id": 54,
-            "Parking_Name": "בלומפילד",
-            "Parking_Address": "התחיה 13 תל-אביב יפו",
-            "Parking_Cost": "ימים א'-ש' בין השעות 07:00 בבוקר ל- 07:00 בבוקר למחרת 16 ש\"ח לכניסה חד פעמית ",
-            "Coordinates": {"lat":32.050071 , "lng": 34.764025}
+            "Coordinates": {"lat": 32.122993, "lng": 34.800558}
     },
     {
             "Parking_Id": 55,
             "Parking_Name": "בן יוסף",
             "Parking_Address": "בן יוסף 22 תל-אביב יפו",
+            "Parking_adress_eng":"Shlomo Ben Yosef St 22, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.125814 , "lng":34.798353 }
+            "Coordinates": {"lat":32.125970 , "lng":34.798188 }
     },
     {
             "Parking_Id": 56,
             "Parking_Name": "בן יוסף 2",
             "Parking_Address": "בן יוסף 15 תל-אביב יפו",
+            "Parking_adress_eng":"Shlomo Ben Yosef St 20, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
             "Coordinates": {"lat": 32.125115, "lng":34.797871 }
     },
@@ -398,281 +421,249 @@
             "Parking_Id": 57,
             "Parking_Name": "ברזני",
             "Parking_Address": "ברזני משה 15 תל-אביב יפו",
+            "Parking_adress_eng":"Shlomo Ben Yosef St 32, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.127993 , "lng":34.798203 }
+            "Coordinates": {"lat":32.128236 , "lng":34.798182 }
     },
     {
             "Parking_Id": 58,
             "Parking_Name": "הנדסה",
             "Parking_Address": "ג`ורג` וויז 83 תל-אביב יפו",
+            "Parking_adress_eng":"Dr George Wise St 17, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א-ש משעה 07:00 - 07:00 למחרת כניסה חד פעמית 20 ש\"ח",
-            "Coordinates": {"lat":32.108593 , "lng":34.806095 }
+            "Coordinates": {"lat":32.108599 , "lng":34.806095 }
     },
     {
             "Parking_Id": 59,
             "Parking_Name": "גלי צה\"ל",
-            "Parking_Address": "יהודה הימית 21 תל-אביב יפו",
+            "Parking_Address": "בעלי התוספות 4, תל אביב יפו",
+            "Parking_adress_eng":"Ba'alei HaTosafot St 4, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.049636 , "lng":34.757083 }
+            "Coordinates": {"lat":32.051059 , "lng":34.756901 }
     },
     {
             "Parking_Id": 60,
             "Parking_Name": "הבעש\"ט",
             "Parking_Address": "הבעש\"ט פינת יפת 171 תל-אביב יפו",
+            "Parking_adress_eng":"HaEtrog St 30, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat": 32.036285, "lng":34.749168 }
+            "Coordinates": {"lat": 32.038569, "lng":34.749204 }
     },
     {
             "Parking_Id": 61,
             "Parking_Name": "המערכה",
             "Parking_Address": "המערכה 10 תל-אביב יפו",
+            "Parking_adress_eng":"HaMa'aracha St 4, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.061525 , "lng":34.793218 }
+            "Coordinates": {"lat":32.061428 , "lng":34.793143 }
     },
     {
             "Parking_Id": 62,
             "Parking_Name": "הרב קוק",
             "Parking_Address": "הרב קוק פינת הארי תל-אביב יפו",
+            "Parking_adress_eng":"Ha'Rav Kook St 40, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.070809 , "lng":34.768219 }
+            "Coordinates": {"lat":32.070744 , "lng":34.767891 }
     },
     {
             "Parking_Id": 63,
             "Parking_Name": "וולפסון",
             "Parking_Address": "השלום 120 תל-אביב יפו",
+            "Parking_adress_eng":"HaShalom Rd 120, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.059362 , "lng":34.807838 }
+            "Coordinates": {"lat":32.059724 , "lng":34.807413}
     },
     {
             "Parking_Id": 64,
             "Parking_Name": "וולפסון 2",
             "Parking_Address": "הטייסים 39 תל-אביב יפו",
+            "Parking_adress_eng":"HaTayasim Rd 39, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.05682 , "lng": 34.806949}
+            "Coordinates": {"lat":32.056543 , "lng": 34.806429}
     },
     {
             "Parking_Id": 65,
             "Parking_Name": "טאגור",
             "Parking_Address": "סמטת טאגור 38 תל-אביב יפו",
+            "Parking_adress_eng":"Tagore St 33, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.1174 , "lng": 34.797785}
+            "Coordinates": {"lat":32.116439 , "lng": 34.796426}
     },
     {
             "Parking_Id": 66,
             "Parking_Name": "יד אבנר",
             "Parking_Address": "קוממיות 24 תל-אביב יפו",
+            "Parking_adress_eng":"Komemiyut St 26, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat": 32.119586, "lng": 34.805155}
-    },
-    {
-            "Parking_Id": 67,
-            "Parking_Name": "לבון",
-            "Parking_Address": "לבון תל-אביב יפו",
-            "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.046579 , "lng":34.771296 }
+            "Coordinates": {"lat": 32.119187, "lng":  34.805426}
     },
     {
             "Parking_Id": 68,
             "Parking_Name": "מבצע קדש",
             "Parking_Address": "מבצע קדש פינת בני אפרים 220 תל-אביב יפו",
+            "Parking_adress_eng":"Mivtsa Kadesh St 25, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.114706 , "lng": 34.817133}
+            "Coordinates": {"lat":32.113622 , "lng": 34.816154}
     },
     {
             "Parking_Id": 69,
             "Parking_Name": "מטודלה",
             "Parking_Address": "בנימין מטודלה 16 תל-אביב יפו",
+            "Parking_adress_eng":"Yisra'el Ashkenazi St 3, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.109811 , "lng":34.827309 }
+            "Coordinates": {"lat":32.109607 , "lng":34.827391 }
     },
     {
             "Parking_Id": 70,
             "Parking_Name": "מי ומי",
             "Parking_Address": "משה סנה 54 תל-אביב יפו",
+            "Parking_adress_eng":"Moshe Sneh St 54 Tel Aviv-Yafo IL 62597",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.121337 , "lng":34.825174 }
+            "Coordinates": {"lat":32.124539 , "lng":34.825011 }
     },
     {
             "Parking_Id": 71,
             "Parking_Name": "מכללה למינהל ומכללת לוינסקי 1",
             "Parking_Address": "שושנה פרסיץ 9 תל-אביב יפו",
+            "Parking_adress_eng":"Shoshana Persits St 7, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.134740 , "lng":34.796597 }
+            "Coordinates": {"lat":32.134469 , "lng":34.796348 }
     },
     {
             "Parking_Id": 72,
             "Parking_Name": "מכללת יפו",
             "Parking_Address": "רבינו ירוחם 12 פינת חבר הלאומים 5 תל-אביב יפו",
+            "Parking_adress_eng":"Khever ha-Le'umim St 5, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.046649 , "lng": 34.760144}
-    },
-    {
-            "Parking_Id": 73,
-            "Parking_Name": "מרים החשמונאית",
-            "Parking_Address": "מרים החשמונאית 38 תל-אביב יפו",
-            "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.095239 , "lng":34.784534 }
-    },
-    {
-            "Parking_Id": 74,
-            "Parking_Name": "משה דיין",
-            "Parking_Address": "משה דיין 16 תל-אביב יפו",
-            "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat": 31.987209, "lng":34.760062 }
+            "Coordinates": {"lat":32.046494 , "lng":34.759719}
     },
     {
             "Parking_Id": 75,
             "Parking_Name": "סוזן דלל",
             "Parking_Address": "המסילה פינת פינס תל-אביב יפו",
+            "Parking_adress_eng":"HaMered St 65, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪, משעה 16:00 כניסה חד פעמית 16 ש\"ח. שישי,שבת ערבי חג וחג כניסה חד פעמית 16 ש\"ח.  ",
-            "Coordinates": {"lat":32.061140 , "lng":34.761164 }
+            "Coordinates": {"lat":32.061234 , "lng":34.761220 }
     },
     {
             "Parking_Id": 76,
             "Parking_Name": "סולד",
             "Parking_Address": "הנריטה סולד 4 תל-אביב יפו",
+            "Parking_adress_eng":"Henrietta Szold St 4, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪, משעה 16:00 כניסה חד פעמית 20 ₪. בימי שישי ,שבת ערבי חג וחג כניסה חד פעמית 20 ₪.",
-            "Coordinates": {"lat":32.079367 , "lng":34.791467 }
+            "Coordinates": {"lat":32.079470 , "lng":34.791512}
     },
     {
             "Parking_Id": 78,
             "Parking_Name": "סלודור",
             "Parking_Address": "רמת אביב תל-אביב יפו",
+            "Parking_adress_eng":"Salvador St 3, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.107170 , "lng":34.797078 }
-    },
-    {
-            "Parking_Id": 79,
-            "Parking_Name": "ספיר",
-            "Parking_Address": "אליהו ספיר תל-אביב יפו",
-            "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.075558 , "lng": 34.777245}
+            "Coordinates": {"lat":32.107208 , "lng":34.797067}
     },
     {
             "Parking_Id": 80,
             "Parking_Name": "עין יעקב",
-            "Parking_Address": "קויפמן 16 תל-אביב יפו",
+            "Parking_Address": "פרופסור יחזקאל קויפמן 16, תל אביב יפו",
+            "Parking_adress_eng":"Kaufmann St 16, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪, משעה 16:00 כניסה חד פעמית 20 ₪. ו-ש כניסה חד פעמית 20 ש\"ח. ",
-            "Coordinates": {"lat":32.062867 , "lng":34.763709 }
+            "Coordinates": {"lat":32.062984 , "lng":34.763571 }
     },
     {
             "Parking_Id": 81,
             "Parking_Name": "עיר שמש",
             "Parking_Address": "עיר שמש 40 תל-אביב יפו",
+            "Parking_adress_eng":"Ir Shemesh St 51, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.124523 , "lng":34.827691 }
+            "Coordinates": {"lat":32.124506 , "lng":34.827829 }
     },
     {
             "Parking_Id": 82,
             "Parking_Name": "פליטי הספר",
-            "Parking_Address": "פליטי הספר פינת דם המכבים תל-אביב יפו",
+            "Parking_Address": "פליטי הספר 38 תל-אביב יפו",
+            "Parking_adress_eng":"Plitei HaSfar St 25, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.069583 , "lng":34.800462 }
+            "Coordinates": {"lat":32.069519 , "lng":34.800537 }
     },
     {
             "Parking_Id": 83,
             "Parking_Name": "צבי נישרי",
             "Parking_Address": "צבי נשרי 2 תל-אביב יפו",
+            "Parking_adress_eng":"Zvi Nishri St 2, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat": 32.054334, "lng":34.800796 }
+            "Coordinates": {"lat": 32.054288, "lng": 34.800793 }
     },
     {
             "Parking_Id": 84,
             "Parking_Name": "רפידים",
             "Parking_Address": "רפידים 7 תל-אביב יפו",
+            "Parking_adress_eng":"Refidim St 3, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.109555 , "lng": 34.812684}
-    },
-    {
-            "Parking_Id": 85,
-            "Parking_Name": "שלומציון המלכה",
-            "Parking_Address": "שלומציון 38 פינת בובליק 16 תל-אביב יפו",
-            "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat": 32.095027, "lng":34.788909 }
+            "Coordinates": {"lat":32.109522 , "lng": 34.812651}
     },
     {
             "Parking_Id": 86,
             "Parking_Name": "שלונסקי",
             "Parking_Address": "שלונסקי 16 תל-אביב יפו",
+            "Parking_adress_eng":"Bnei Ephraim St 232, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.118014 , "lng":34.818326 }
-    },
-    {
-            "Parking_Id": 87,
-            "Parking_Name": "תל ברוך",
-            "Parking_Address": "בקר אהרון 18 תל-אביב יפו",
-            "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.122133 , "lng":34.818073 }
+            "Coordinates": {"lat":32.117968 , "lng":34.818449 }
     },
     {
             "Parking_Id": 88,
             "Parking_Name": "רידינג מזרח 1",
             "Parking_Address": "רוקח 15 תל-אביב יפו",
+            "Parking_adress_eng":"Rokach Blvd 15, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.100185 , "lng":34.781106 }
-    },
-    {
-            "Parking_Id": 89,
-            "Parking_Name": "כלכלה",
-            "Parking_Address": "ג`ורג` וייז 16 תל-אביב יפו",
-            "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום ‡ תעריף שעתי בכל ימות השבוע, לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪",
-            "Coordinates": {"lat":32.109639 , "lng": 34.803594}
-    },
-    {
-            "Parking_Id": 90,
-            "Parking_Name": "מכללה למינהל ומכללת לוינסקי 2",
-            "Parking_Address": "שושנה פרסיץ 9 תל-אביב יפו",
-            "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.108798 , "lng": 34.803266}
+            "Coordinates": {"lat":32.099641 , "lng":34.780474 }
     },
     {
             "Parking_Id": 91,
             "Parking_Name": "מכללה למינהל ומכללת לוינסקי 3",
             "Parking_Address": "שושנה פרסיץ 9 תל-אביב יפו",
+            "Parking_adress_eng":"Shoshana Persits St 9, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.134731 , "lng":34.796629 }
+            "Coordinates": {"lat":32.134124 , "lng":34.795300 }
     },
     {
             "Parking_Id": 92,
             "Parking_Name": "לוחמים",
             "Parking_Address": "הלוחמים 15 תל-אביב יפו",
+            "Parking_adress_eng":"'Ha-Lokhamim St 33, Holon, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום, ‡ תעריף לכניסה חד פעמית 20 ש\"ח תקף ל- 24 שעות מרגע כניסת הרכב",
-            "Coordinates": {"lat":32.030373 , "lng":34.770758 }
-    },
-    {
-            "Parking_Id": 93,
-            "Parking_Name": "מעונות",
-            "Parking_Address": "שבט בנימין 1",
-            "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום ‡ תעריף שעתי בכל ימות השבוע, לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪",
-            "Coordinates": {"lat":32.108585 , "lng":34.806045 }
+            "Coordinates": {"lat":32.030274 , "lng":34.770650 }
     },
     {
             "Parking_Id": 94,
             "Parking_Name": "אלוף",
             "Parking_Address": "אלוף פינת בן חיל תל אביב - יפו",
+            "Parking_adress_eng":"Ben Khayil St 2, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ללא תשלום - יתכנו שינויים, בהתאם לשילוט במקום.",
-            "Coordinates": {"lat":32.052055 , "lng":34.797798 }
+            "Coordinates": {"lat":32.052002 , "lng":34.797958 }
     },
     {
             "Parking_Id": 95,
             "Parking_Name": "ליבר",
             "Parking_Address": "פינס 39 תל-אביב יפו",
+            "Parking_adress_eng":"Pines St 41, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "תעריף שעתי בכל ימות השבוע לשעה ראשונה או חלק ממנה 12 ₪, כל ¼ שעה נוספת או חלק ממנה 3 ₪",
-            "Coordinates": {"lat":32.060187 , "lng": 34.768085}
+            "Coordinates": {"lat":32.060151 , "lng": 34.768033}
     },
     {
             "Parking_Id": 96,
             "Parking_Name": "מוזיאונים",
             "Parking_Address": "קלאוזנר 240 תל-אביב יפו",
+            "Parking_adress_eng":"Jewish People Museum/Klausner, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "תעריף כניסה חד פעמי 24 ₪ ‡  ‡ בימים א` עד ה` בין השעות 07:00 עד 23:00  ‡ בשישי וערבי חג משעה 07:00 עד 15:00  ‡ בשבת ובחג משעה 08:00 עד 19:00",
-            "Coordinates": {"lat":32.113615 , "lng": 34.807582}
+            "Coordinates": {"lat":32.114439 , "lng": 34.807553}
     },
     {
             "Parking_Id": 97,
             "Parking_Name": "ארלוזורוב 17",
             "Parking_Address": "ארלוזורוב 17 תל-אביב יפו",
+            "Parking_adress_eng":"Arlozorov St 17, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "השהייה בחניון עד 15 דקות ללא תשלום, ‡ תעריף שעתי בכל ימות השבוע לשעה ראשונה או חלק ממנה 16 ₪, כל ¼ שעה נוספת או חלק ממנה 4 ₪",
-            "Coordinates": {"lat":32.087214 , "lng": 34.773708}
+            "Coordinates": {"lat":32.087245 , "lng": 34.773730}
     }
     
 ]

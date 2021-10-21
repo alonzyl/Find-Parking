@@ -1,0 +1,48 @@
+
+
+.info-Directions ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .info-Directions ul li span.Directions-circle {
+    position: relative;
+    border-radius: 100%;
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    display: inline-block;
+  }
+  
+  .info-Directions ul li:not(:first-of-type) span.Directions-circle::before {
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    width: 0;
+    height: 50px;
+    display: block;
+    content: '';
+    left: 50%;
+    z-index: 1;
+    top: -52px;
+    margin-left: -1px;
+    color: white;
+  }
+  
+  .info-Directions ul li a {
+    color: #000;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  .Directions {
+    margin-left: 20px;
+  }
+
+  h2{
+    margin-bottom: 0px;
+  }

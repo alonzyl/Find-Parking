@@ -11,8 +11,34 @@
 .searchBar {
   /* background-color: white ; */
   flex: 0 0 30vw;
+  box-shadow: 0 2px 0px 3px white, 0 -9px 0px 0px white, 12px 0 15px -15px rgb(0, 0, 0), -12px 0 15px -4px rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  padding-top: 5vh;
+
 }
 .map {
   flex: 0 0 70vw;
   overflow: auto;
+  z-index: 4;
+  padding-top: 5vh;
 } 
+.DirectionsDisplay {
+  margin-top: 80px;
+}
+
+.NavigationBar{
+  background-color: rgb(78, 78, 78);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 5vh;
+  z-index: 10;
+  box-shadow:  12px 0 15px -15px rgb(0, 0, 0),  12px 0 15px -15px rgb(165, 0, 0), 12px 0 15px -15px rgb(238, 255, 0), -12px 0 15px -4px rgba(151, 151, 151, 0.8);
+
+  color: red;
+}
+.NavigationBar img {
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 2px;
+}

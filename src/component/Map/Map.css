@@ -1,0 +1,14 @@
+.infoWindow {
+    text-align: right;
+    width: 400px;
+    height: auto;
+}
+.infoWindow p {
+    margin-right: 0;
+    text-align: right;
+}
+
+.infoWindow img {
+    width: 150px;
+    height: auto;
+}
