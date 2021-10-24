@@ -41,7 +41,7 @@ export function SearchBar(props) {
   return (    
     <div >
       <div>
-        <h2>Get Directions</h2>
+        <h2>Get Directions:</h2>
       </div>
       <Autocomplete
         onLoad = {onLoad}

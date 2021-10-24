@@ -7,7 +7,8 @@ const handleData = (data) => {
     data.map(handle => { 
         let string
         string = handle.instructions.replace(/\<.*?[^\)]\>/g, '');
-        finalData.push(string)
+       
+        finalData.push(<li><span class="Directions-circle">.</span><a >{string}</a></li>)
 
     })
     return finalData
@@ -18,26 +19,16 @@ export function DirectionsDisplay(props) {
     
     let data = handleData(props.directions);
 
-    const list = 
-        data.map ((item,index) => {
-
-            <li><span class="Directions-circle">.</span><a >{item}</a></li>
-        })
     
-
     return (
         <div className = "Directions">
-            <h2 >Directions</h2>
+            <h2 className = "DirectionsTitle">Directions: </h2>
             <div className = "info-Directions"> 
                 <ul>
-                    {list}
+                    {data}
                 </ul>
             </div>
-        
-         
-
-
-        </div>
+        </div>  
     )
 }
 

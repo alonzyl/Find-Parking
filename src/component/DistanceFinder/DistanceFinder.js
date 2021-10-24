@@ -3,11 +3,11 @@ import React, { useEffect,useState } from "react";
 import * as ParkingData from "../Data/Data.json"; 
 
 export function DistanceFinder(props) {
-
+    
+    const [finalParking,setFinalParking] = useState(null);
     const service = new google.maps.DistanceMatrixService();
     let shortestParkingList =[]
     let listOfParking
-    const [finalParking,setFinalParking] = useState(null)
     let datalength 
 
     const handleData = () => {
@@ -93,10 +93,10 @@ export function DistanceFinder(props) {
 
     useEffect(() => {
         if (finalParking){
-            console.log("this is the final parking",finalParking)
             props.parentCallBack(finalParking)
         }
     },[finalParking]);
+
 
    
 
