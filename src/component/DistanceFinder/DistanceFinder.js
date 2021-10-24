@@ -11,7 +11,7 @@ export function DistanceFinder(props) {
     let datalength 
 
     const handleData = () => {
-        datalength = Math.ceil(ParkingData.Parking.length/24) //the length of data separted for fetch
+        datalength = Math.ceil(ParkingData.Parking.length/24) //the length of data separated for fetch
         //list for fetching distance
         for (var i=1; i<=datalength;i++){
              listOfParking = ParkingData.Parking.slice(24*(i-1),i*24)
@@ -27,11 +27,26 @@ export function DistanceFinder(props) {
             service.getDistanceMatrix(matrixOptions, callback) //fetch api    
         }
     }
+
+    const callback = (response, status) => {
+        if (status !== "OK") {
+            alert(status ,"error");
+            return;
+        }
+        shortestParkingList.push(findShortestForCallBack(response))
+        //if finished searching 
+        if (shortestParkingList.length === datalength) {
+            console.log(shortestParkingList)
+            console.log("the adress of the shortest parking is",shortestroute(shortestParkingList))
+            convertToGeo(shortestroute(shortestParkingList))
+            
+        }      
+    }
+
     const findShortestForCallBack = (response) => {
         let minValue ={adress: response.destinationAddresses[0], duration: response.rows[0].elements[0].duration } // the first response 
         
         response.rows[0].elements.map((individualResponse,index) => {
-            // console.log(response.destinationAddresses[index],individualResponse) // for error check print all parkings 
             if (minValue.duration.value>individualResponse.duration.value)
             {
                 minValue= {adress:response.destinationAddresses[index], duration:individualResponse.duration}
@@ -56,21 +71,6 @@ export function DistanceFinder(props) {
         //return closestParkinTemp
         return closestParkinTemp
         }
-    }
-
-    const callback = (response, status) => {
-        if (status !== "OK") {
-            alert(status ,"error");
-            return;
-        }
-        shortestParkingList.push(findShortestForCallBack(response))
-        //if finished searching 
-        if (shortestParkingList.length === datalength) {
-            console.log(shortestParkingList)
-            console.log("the adress of the shortest parking is",shortestroute(shortestParkingList))
-            convertToGeo(shortestroute(shortestParkingList))
-            
-        }      
     }
 
     // convert adress to geo location 
@@ -98,11 +98,7 @@ export function DistanceFinder(props) {
     },[finalParking]);
 
 
-   
-
-    //return fucntion of distanceFinder 
     return  (shortestParkingList)
-
 
 }
 

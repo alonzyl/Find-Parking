@@ -9,26 +9,25 @@ export function SearchBar(props) {
   const [destinationLocation,setDestinationLocation] = useState({lat:null,lng:null});  
   const [originLocation,SetoriginLocation] = useState({lat:null,lng:null})
   
-  var temp 
   const onLoad = (autocompleteOnLoad) => {
     autoComplete=autocompleteOnLoad
-    temp = autocompleteOnLoad
   }
+
   //handle change of search bar 
   const handleChange = async() => {
-    
-    setDestinationLocation({
-      lat: autoComplete.getPlace().geometry.location.lat(),
-      lng: autoComplete.getPlace().geometry.location.lng()
-    })
-    autoComplete = temp
+   
+    if (autoComplete.gm_bindings_.fields[102].Bj.place.geometry){
+      setDestinationLocation({
+            lat: autoComplete.getPlace().geometry.location.lat(),
+            lng: autoComplete.getPlace().geometry.location.lng()
+          })
+    }    
   }
 
   // callback to set origin location after calling distance finder
   const handleCallBackOrigin = (childData) => {
     SetoriginLocation(childData)
   }
-
   
   //call back to parent to set the destination and the origin 
   useEffect(() => {
@@ -49,6 +48,8 @@ export function SearchBar(props) {
         options={{
           componentRestrictions: { country: "isr" },
         }}
+        onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
+
       >
       <input  
           type="text"
@@ -59,6 +60,5 @@ export function SearchBar(props) {
 
       {destinationLocation.lat !== null? <DistanceFinder origin = {destinationLocation} parentCallBack = {handleCallBackOrigin}  />:null}
     </div>
-  )
-}
+  )}
 export default SearchBar;

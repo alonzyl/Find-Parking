@@ -1,6 +1,8 @@
 .infoWindow {
+    display: flex;
+    align-items: center;
     text-align: right;
-    width: 400px;
+    width: 350px;
     height: auto;
 }
 .infoWindow p {
@@ -9,6 +11,24 @@
 }
 
 .infoWindow img {
+    flex:1;
+    order: 2;
     width: 150px;
-    height: auto;
+    height: 90px;
+    margin-left: 10px;
+    margin-right: 0px;
+}  
+
+.infoWindow h2 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    
 }
+.infoWindow h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+

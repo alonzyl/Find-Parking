@@ -1,9 +1,8 @@
 import './App.css';
-import { useState,useEffect } from 'react';
+import { useState} from 'react';
 import Map from './component/Map/Map'
-import SearchBar from './component/Search bar/SearchBar';
-import DirectionsDisplay from './component/Search bar/DirectionsDisplay';
-import logo from './logo.png'
+import SearchBar from './component/SearchBar/SearchBar';
+import DirectionsDisplay from './component/SearchBar/DirectionsDisplay';
 function App() {
 
   const [originLocation,SetoriginLocation] = useState({lat:null,lng:null})
@@ -20,27 +19,23 @@ function App() {
     setDirections(childData)
   }
 
+  return (
   
-    return (
-    
-      <div className = "holder-app">
-        <div className = "NavigationBar">
-          <img src = {logo}/>
-        </div>
-        <div className = "searchBar"> 
-         <SearchBar parentCallBack={handleCallBack} />
-         <div className= "DirectionsDisplay">
+    <div className = "holder-app">
+      <div className = "NavigationBar">
+        <h4>Find Ahozat Ahof Parking</h4>
+      </div>
+      <div className = "searchBar"> 
+        <SearchBar parentCallBack={handleCallBack} />
+        <div className= "DirectionsDisplay">
           {directions!==null? <DirectionsDisplay  directions = {directions}/>:null}
-         </div>
-        </div>
-        <div className = "map">
-          <Map origin = {originLocation} destination={destinationLocation} directionsCallBack = {handleDirectionsCallBack} /> 
         </div>
       </div>
-    );
-  
-  
-  
+      <div className = "map">
+        <Map origin = {originLocation} destination={destinationLocation} directionsCallBack = {handleDirectionsCallBack} /> 
+      </div>
+    </div>
+  );
 }
 
 

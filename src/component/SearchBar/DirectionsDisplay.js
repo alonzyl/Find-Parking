@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './DirectionsDisplay.css';
 
 
 const handleData = (data) => {
     let finalData = []
     data.map(handle => { 
-        let string
-        string = handle.instructions.replace(/\<.*?[^\)]\>/g, '');
-       
-        finalData.push(<li><span class="Directions-circle">.</span><a >{string}</a></li>)
 
+        let string = handle.instructions.replace(/\<.*?[^\)]\>/g, '');
+        finalData.push(<li><span className="Directions-circle">.</span><a >{string}</a></li>)
     })
     return finalData
 }
@@ -18,8 +16,6 @@ const handleData = (data) => {
 export function DirectionsDisplay(props) {
     
     let data = handleData(props.directions);
-
-    
     return (
         <div className = "Directions">
             <h2 className = "DirectionsTitle">Directions: </h2>
@@ -31,5 +27,4 @@ export function DirectionsDisplay(props) {
         </div>  
     )
 }
-
 export default DirectionsDisplay;
