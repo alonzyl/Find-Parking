@@ -13,8 +13,8 @@
 .infoWindow img {
     flex:1;
     order: 2;
-    width: 150px;
-    height: 90px;
+    width: 130px;
+    height: 50px;
     margin-left: 10px;
     margin-right: 0px;
 }  

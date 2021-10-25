@@ -226,7 +226,7 @@
             "Coordinates": {"lat":32.081744 , "lng":34.799768 }
     },
     {
-            "Parking_Id": 30,
+            "Parking_Id": 29,
             "Parking_Name": "מרכזים",
             "Parking_Address": "הזרם 12 תל-אביב יפו",
             "Parking_adress_eng":"HaYesod St 7, Tel Aviv-Yafo, Israel",
@@ -234,7 +234,7 @@
             "Coordinates": {"lat":32.051032 , "lng":34.766877 }
     },
     {
-            "Parking_Id": 31,
+            "Parking_Id": 30,
             "Parking_Name": "כרמל",
             "Parking_Address": "קלישר פינת הכרמל תל-אביב יפו",
             "Parking_adress_eng":"Ya'avets St 1, Tel Aviv-Yafo, Israel",
@@ -242,7 +242,7 @@
             "Coordinates": {"lat":32.066772 , "lng": 34.766509}
     },
     {
-            "Parking_Id": 32,
+            "Parking_Id": 31,
             "Parking_Name": "מרד",
             "Parking_Address": "המרד 32 תל-אביב יפו",
             "Parking_adress_eng":"HaMered St 32, Tel Aviv-Yafo, Israel",
@@ -250,7 +250,7 @@
             "Coordinates": {"lat":32.064165 , "lng":34.764276 }
     },
     {
-            "Parking_Id": 33,
+            "Parking_Id": 32,
             "Parking_Name": "פנחס רוזן - כיתן",
             "Parking_Address": "פנחס רוזן תל-אביב יפו",
             "Parking_adress_eng":"Pinkhas Rosen St 49, Tel Aviv-Yafo, Israel",
@@ -258,7 +258,7 @@
             "Coordinates": {"lat":32.112422 , "lng":34.824958 }
     },
     {
-            "Parking_Id": 34,
+            "Parking_Id": 33,
             "Parking_Name": "תקומה",
             "Parking_Address": "המרד 36 תל-אביב יפו",
             "Parking_adress_eng":"HaMered St 36, Tel Aviv-Yafo, Israel",
@@ -266,7 +266,7 @@
             "Coordinates": {"lat":32.064542 , "lng":34.764856 }
     },
     {
-            "Parking_Id": 35,
+            "Parking_Id": 34,
             "Parking_Name": "החשמל",
             "Parking_Address": "לבונטין 20 תל-אביב יפו",
             "Parking_adress_eng":"Levontin St 18, Tel Aviv-Yafo, Israel",
@@ -274,7 +274,7 @@
             "Coordinates": {"lat":32.062200 , "lng":34.776236 }
     },
     {
-            "Parking_Id": 36,
+            "Parking_Id": 35,
             "Parking_Name": "גן הכובשים",
             "Parking_Address": "לוי יוסף גונדר 5 תל-אביב יפו",
             "Parking_adress_eng":"Yosef Levi St 2, Tel Aviv-Yafo, Israel",
@@ -282,7 +282,7 @@
             "Coordinates": {"lat":32.065958 , "lng": 34.764196}
     },
     {
-            "Parking_Id": 37,
+            "Parking_Id": 36,
             "Parking_Name": "מונטיפיורי",
             "Parking_Address": "מונטיפיורי 5 תל-אביב יפו",
             "Parking_adress_eng":"Montefiore St 5, Tel Aviv-Yafo, Israel",
@@ -290,7 +290,7 @@
             "Coordinates": {"lat":32.06483 , "lng":34.769427 }
     },
     {
-            "Parking_Id": 38,
+            "Parking_Id": 37,
             "Parking_Name": "הרכבת",
             "Parking_Address": "הרכבת 20 תל-אביב יפו",
             "Parking_adress_eng":"HaRakevet St 20, Tel Aviv-Yafo, Israel",
@@ -298,7 +298,7 @@
             "Coordinates": {"lat":32.063292 , "lng":34.778067 }
     },
     {
-            "Parking_Id": 39,
+            "Parking_Id": 38,
             "Parking_Name": "רבניצקי",
             "Parking_Address": "רבניצקי 6 תל-אביב יפו",
             "Parking_adress_eng":"Ravnitski St 6, Tel Aviv-Yafo, Israel",
@@ -306,7 +306,7 @@
             "Coordinates": {"lat": 32.066122, "lng": 34.789904}
     },
     {
-            "Parking_Id": 40,
+            "Parking_Id": 39,
             "Parking_Name": "גלית",
             "Parking_Address": "וינגייט 3 - 1 תל-אביב יפו",
             "Parking_adress_eng":"Wingate St 9, Tel Aviv-Yafo, Israel",
@@ -314,7 +314,7 @@
             "Coordinates": {"lat":32.060212 , "lng":34.788296}
     },
     {
-            "Parking_Id": 41,
+            "Parking_Id": 40,
             "Parking_Name": "הפארק - חברת גני יהושוע",
             "Parking_Address": "רוקח 94 תל-אביב יפו",
             "Parking_adress_eng":"Rokach Blvd 94, Tel Aviv-Yafo, Israel",
@@ -322,7 +322,7 @@
             "Coordinates": {"lat":32.105568 , "lng":34.813516 }
     },
     {
-            "Parking_Id": 42,
+            "Parking_Id": 41,
             "Parking_Name": "גולפיטק - חברת גני יהושוע",
             "Parking_Address": "רוקח 80 תל-אביב יפו",
             "Parking_adress_eng":"University Railway Station/Rokach Blvd, Tel Aviv-Yafo, Israel",
@@ -330,7 +330,7 @@
             "Coordinates": {"lat":32.102607 , "lng": 34.806558}
     },
     {
-            "Parking_Id": 43,
+            "Parking_Id": 42,
             "Parking_Name": "סמולרש",
             "Parking_Address": "ג`ורג` וייז 16 תל-אביב יפו",
             "Parking_adress_eng":"Dr George Wise St 32-34, Tel Aviv-Yafo, Israel",
@@ -338,7 +338,7 @@
             "Coordinates": {"lat": 32.109333, "lng": 34.803654}
     },
     {
-            "Parking_Id": 44,
+            "Parking_Id": 43,
             "Parking_Name": "רידינג מערב",
             "Parking_Address": "רוקח 7 תל-אביב יפו",
             "Parking_adress_eng":"Tel Aviv Taxi Station Reading Terminal, Tel Aviv-Yafo, Israel",
@@ -346,7 +346,7 @@
             "Coordinates": {"lat":32.098870 , "lng": 34.778520}
     },
     {
-            "Parking_Id": 45,
+            "Parking_Id": 44,
             "Parking_Name": "שרתון",
             "Parking_Address": "הנמל 1 תל-אביב יפו",
             "Parking_adress_eng":"Nemal Tel Aviv St 8, Tel Aviv-Yafo, Israel",
@@ -354,15 +354,15 @@
             "Coordinates": {"lat":32.094292, "lng":34.772485 }
     },
     {
-            "Parking_Id": 46,
+            "Parking_Id": 45,
             "Parking_Name": "גן הכובשים 2",
             "Parking_Address": "כובשים 80 תל אביב ",
             "Parking_adress_eng":"Yosef Levi/HaKovshim, Tel Aviv-Yafo, Israel",
             "Parking_Cost": "ימים א'- ש' בין השעות 07:00 בבוקר ועד 07:00 למחרת , 20 ש\"ח לכניסה חד פעמית",
-            "Coordinates": {"lat":32.066116 , "lng":  34.763837}
+            "Coordinates": {"lat":32.067058 , "lng":  34.763826}
     },
     {
-            "Parking_Id": 47,
+            "Parking_Id": 46,
             "Parking_Name": "אבולעפיה",
             "Parking_Address": "קבוץ גלויות 36 תל-אביב יפו",
             "Parking_adress_eng":"Kibbutz Galuyot Rd 45, Tel Aviv-Yafo, Israel",
@@ -370,7 +370,7 @@
             "Coordinates": {"lat":32.051914,  "lng": 34.767666}
     },
     {
-            "Parking_Id": 48,
+            "Parking_Id": 47,
             "Parking_Name": "אחימאיר",
             "Parking_Address": "אחימאיר אבא 28 תל-אביב יפו",
             "Parking_adress_eng":"Aba Akhime'ir St 28, Tel Aviv-Yafo, Israel",
@@ -378,7 +378,7 @@
             "Coordinates": {"lat":32.124295 , "lng": 34.803830 }
     },
     {
-            "Parking_Id": 50,
+            "Parking_Id": 48,
             "Parking_Name": "אלפסי",
             "Parking_Address": "אלפסי יצחק 12 תל-אביב יפו",
             "Parking_adress_eng":"אלפסי יצחק 12 תל-אביב יפו, Tel Aviv-Yafo, Israel",
@@ -386,7 +386,7 @@
             "Coordinates": {"lat":32.050352 , "lng":34.764193 }
     },
     {
-            "Parking_Id": 52,
+            "Parking_Id": 49,
             "Parking_Name": "בית החייל",
             "Parking_Address": "עקיבה אריה 31 תל-אביב יפו",
             "Parking_adress_eng":"Arieh Akiva St 31, Tel Aviv-Yafo, Israel",
@@ -394,7 +394,7 @@
             "Coordinates": {"lat":32.090625 , "lng":34.791771 }
     },
     {
-            "Parking_Id": 53,
+            "Parking_Id": 50,
             "Parking_Name": "בית צורי",
             "Parking_Address": "בית צורי 20 תל-אביב יפו",
             "Parking_adress_eng":"Eliyahu Beit Tsuri St 20, Tel Aviv-Yafo, Israel",
@@ -402,7 +402,7 @@
             "Coordinates": {"lat": 32.122993, "lng": 34.800558}
     },
     {
-            "Parking_Id": 55,
+            "Parking_Id": 51,
             "Parking_Name": "בן יוסף",
             "Parking_Address": "בן יוסף 22 תל-אביב יפו",
             "Parking_adress_eng":"Shlomo Ben Yosef St 22, Tel Aviv-Yafo, Israel",
@@ -410,7 +410,7 @@
             "Coordinates": {"lat":32.125970 , "lng":34.798188 }
     },
     {
-            "Parking_Id": 56,
+            "Parking_Id": 52,
             "Parking_Name": "בן יוסף 2",
             "Parking_Address": "בן יוסף 15 תל-אביב יפו",
             "Parking_adress_eng":"Shlomo Ben Yosef St 20, Tel Aviv-Yafo, Israel",
@@ -418,7 +418,7 @@
             "Coordinates": {"lat": 32.125115, "lng":34.797871 }
     },
     {
-            "Parking_Id": 57,
+            "Parking_Id": 53,
             "Parking_Name": "ברזני",
             "Parking_Address": "ברזני משה 15 תל-אביב יפו",
             "Parking_adress_eng":"Shlomo Ben Yosef St 32, Tel Aviv-Yafo, Israel",
@@ -426,7 +426,7 @@
             "Coordinates": {"lat":32.128236 , "lng":34.798182 }
     },
     {
-            "Parking_Id": 58,
+            "Parking_Id": 54,
             "Parking_Name": "הנדסה",
             "Parking_Address": "ג`ורג` וויז 83 תל-אביב יפו",
             "Parking_adress_eng":"Dr George Wise St 17, Tel Aviv-Yafo, Israel",
@@ -434,7 +434,7 @@
             "Coordinates": {"lat":32.108599 , "lng":34.806095 }
     },
     {
-            "Parking_Id": 59,
+            "Parking_Id": 55,
             "Parking_Name": "גלי צה\"ל",
             "Parking_Address": "בעלי התוספות 4, תל אביב יפו",
             "Parking_adress_eng":"Ba'alei HaTosafot St 4, Tel Aviv-Yafo, Israel",
@@ -442,7 +442,7 @@
             "Coordinates": {"lat":32.051059 , "lng":34.756901 }
     },
     {
-            "Parking_Id": 60,
+            "Parking_Id": 56,
             "Parking_Name": "הבעש\"ט",
             "Parking_Address": "הבעש\"ט פינת יפת 171 תל-אביב יפו",
             "Parking_adress_eng":"HaEtrog St 30, Tel Aviv-Yafo, Israel",
@@ -450,7 +450,7 @@
             "Coordinates": {"lat": 32.038569, "lng":34.749204 }
     },
     {
-            "Parking_Id": 61,
+            "Parking_Id": 57,
             "Parking_Name": "המערכה",
             "Parking_Address": "המערכה 10 תל-אביב יפו",
             "Parking_adress_eng":"HaMa'aracha St 4, Tel Aviv-Yafo, Israel",
@@ -458,7 +458,7 @@
             "Coordinates": {"lat":32.061428 , "lng":34.793143 }
     },
     {
-            "Parking_Id": 62,
+            "Parking_Id": 58,
             "Parking_Name": "הרב קוק",
             "Parking_Address": "הרב קוק פינת הארי תל-אביב יפו",
             "Parking_adress_eng":"Ha'Rav Kook St 40, Tel Aviv-Yafo, Israel",
@@ -466,7 +466,7 @@
             "Coordinates": {"lat":32.070744 , "lng":34.767891 }
     },
     {
-            "Parking_Id": 63,
+            "Parking_Id": 59,
             "Parking_Name": "וולפסון",
             "Parking_Address": "השלום 120 תל-אביב יפו",
             "Parking_adress_eng":"HaShalom Rd 120, Tel Aviv-Yafo, Israel",
@@ -474,7 +474,7 @@
             "Coordinates": {"lat":32.059724 , "lng":34.807413}
     },
     {
-            "Parking_Id": 64,
+            "Parking_Id": 60,
             "Parking_Name": "וולפסון 2",
             "Parking_Address": "הטייסים 39 תל-אביב יפו",
             "Parking_adress_eng":"HaTayasim Rd 39, Tel Aviv-Yafo, Israel",
@@ -482,7 +482,7 @@
             "Coordinates": {"lat":32.056543 , "lng": 34.806429}
     },
     {
-            "Parking_Id": 65,
+            "Parking_Id": 61,
             "Parking_Name": "טאגור",
             "Parking_Address": "סמטת טאגור 38 תל-אביב יפו",
             "Parking_adress_eng":"Tagore St 33, Tel Aviv-Yafo, Israel",
@@ -490,7 +490,7 @@
             "Coordinates": {"lat":32.116439 , "lng": 34.796426}
     },
     {
-            "Parking_Id": 66,
+            "Parking_Id": 62,
             "Parking_Name": "יד אבנר",
             "Parking_Address": "קוממיות 24 תל-אביב יפו",
             "Parking_adress_eng":"Komemiyut St 26, Tel Aviv-Yafo, Israel",
@@ -498,7 +498,7 @@
             "Coordinates": {"lat": 32.119187, "lng":  34.805426}
     },
     {
-            "Parking_Id": 68,
+            "Parking_Id": 63,
             "Parking_Name": "מבצע קדש",
             "Parking_Address": "מבצע קדש פינת בני אפרים 220 תל-אביב יפו",
             "Parking_adress_eng":"Mivtsa Kadesh St 25, Tel Aviv-Yafo, Israel",
@@ -506,7 +506,7 @@
             "Coordinates": {"lat":32.113622 , "lng": 34.816154}
     },
     {
-            "Parking_Id": 69,
+            "Parking_Id": 64,
             "Parking_Name": "מטודלה",
             "Parking_Address": "בנימין מטודלה 16 תל-אביב יפו",
             "Parking_adress_eng":"Yisra'el Ashkenazi St 3, Tel Aviv-Yafo, Israel",
@@ -514,7 +514,7 @@
             "Coordinates": {"lat":32.109607 , "lng":34.827391 }
     },
     {
-            "Parking_Id": 70,
+            "Parking_Id": 65,
             "Parking_Name": "מי ומי",
             "Parking_Address": "משה סנה 54 תל-אביב יפו",
             "Parking_adress_eng":"Moshe Sneh St 54 Tel Aviv-Yafo IL 62597",
@@ -522,7 +522,7 @@
             "Coordinates": {"lat":32.124539 , "lng":34.825011 }
     },
     {
-            "Parking_Id": 71,
+            "Parking_Id": 66,
             "Parking_Name": "מכללה למינהל ומכללת לוינסקי 1",
             "Parking_Address": "שושנה פרסיץ 9 תל-אביב יפו",
             "Parking_adress_eng":"Shoshana Persits St 7, Tel Aviv-Yafo, Israel",
@@ -530,7 +530,7 @@
             "Coordinates": {"lat":32.134469 , "lng":34.796348 }
     },
     {
-            "Parking_Id": 72,
+            "Parking_Id": 67,
             "Parking_Name": "מכללת יפו",
             "Parking_Address": "רבינו ירוחם 12 פינת חבר הלאומים 5 תל-אביב יפו",
             "Parking_adress_eng":"Khever ha-Le'umim St 5, Tel Aviv-Yafo, Israel",
@@ -538,7 +538,7 @@
             "Coordinates": {"lat":32.046494 , "lng":34.759719}
     },
     {
-            "Parking_Id": 75,
+            "Parking_Id": 68,
             "Parking_Name": "סוזן דלל",
             "Parking_Address": "המסילה פינת פינס תל-אביב יפו",
             "Parking_adress_eng":"HaMered St 65, Tel Aviv-Yafo, Israel",
@@ -546,7 +546,7 @@
             "Coordinates": {"lat":32.061234 , "lng":34.761220 }
     },
     {
-            "Parking_Id": 76,
+            "Parking_Id": 69,
             "Parking_Name": "סולד",
             "Parking_Address": "הנריטה סולד 4 תל-אביב יפו",
             "Parking_adress_eng":"Henrietta Szold St 4, Tel Aviv-Yafo, Israel",
@@ -554,7 +554,7 @@
             "Coordinates": {"lat":32.079470 , "lng":34.791512}
     },
     {
-            "Parking_Id": 78,
+            "Parking_Id": 70,
             "Parking_Name": "סלודור",
             "Parking_Address": "רמת אביב תל-אביב יפו",
             "Parking_adress_eng":"Salvador St 3, Tel Aviv-Yafo, Israel",
@@ -562,7 +562,7 @@
             "Coordinates": {"lat":32.107208 , "lng":34.797067}
     },
     {
-            "Parking_Id": 80,
+            "Parking_Id": 71,
             "Parking_Name": "עין יעקב",
             "Parking_Address": "פרופסור יחזקאל קויפמן 16, תל אביב יפו",
             "Parking_adress_eng":"Kaufmann St 16, Tel Aviv-Yafo, Israel",
@@ -570,7 +570,7 @@
             "Coordinates": {"lat":32.062984 , "lng":34.763571 }
     },
     {
-            "Parking_Id": 81,
+            "Parking_Id": 73,
             "Parking_Name": "עיר שמש",
             "Parking_Address": "עיר שמש 40 תל-אביב יפו",
             "Parking_adress_eng":"Ir Shemesh St 51, Tel Aviv-Yafo, Israel",
@@ -578,7 +578,7 @@
             "Coordinates": {"lat":32.124506 , "lng":34.827829 }
     },
     {
-            "Parking_Id": 82,
+            "Parking_Id": 73,
             "Parking_Name": "פליטי הספר",
             "Parking_Address": "פליטי הספר 38 תל-אביב יפו",
             "Parking_adress_eng":"Plitei HaSfar St 25, Tel Aviv-Yafo, Israel",
@@ -586,7 +586,7 @@
             "Coordinates": {"lat":32.069519 , "lng":34.800537 }
     },
     {
-            "Parking_Id": 83,
+            "Parking_Id": 74,
             "Parking_Name": "צבי נישרי",
             "Parking_Address": "צבי נשרי 2 תל-אביב יפו",
             "Parking_adress_eng":"Zvi Nishri St 2, Tel Aviv-Yafo, Israel",
@@ -594,7 +594,7 @@
             "Coordinates": {"lat": 32.054288, "lng": 34.800793 }
     },
     {
-            "Parking_Id": 84,
+            "Parking_Id": 75,
             "Parking_Name": "רפידים",
             "Parking_Address": "רפידים 7 תל-אביב יפו",
             "Parking_adress_eng":"Refidim St 3, Tel Aviv-Yafo, Israel",
@@ -602,7 +602,7 @@
             "Coordinates": {"lat":32.109522 , "lng": 34.812651}
     },
     {
-            "Parking_Id": 86,
+            "Parking_Id": 76,
             "Parking_Name": "שלונסקי",
             "Parking_Address": "שלונסקי 16 תל-אביב יפו",
             "Parking_adress_eng":"Bnei Ephraim St 232, Tel Aviv-Yafo, Israel",
@@ -610,7 +610,7 @@
             "Coordinates": {"lat":32.117968 , "lng":34.818449 }
     },
     {
-            "Parking_Id": 88,
+            "Parking_Id": 77,
             "Parking_Name": "רידינג מזרח 1",
             "Parking_Address": "רוקח 15 תל-אביב יפו",
             "Parking_adress_eng":"Rokach Blvd 15, Tel Aviv-Yafo, Israel",
@@ -618,7 +618,7 @@
             "Coordinates": {"lat":32.099641 , "lng":34.780474 }
     },
     {
-            "Parking_Id": 91,
+            "Parking_Id": 78,
             "Parking_Name": "מכללה למינהל ומכללת לוינסקי 3",
             "Parking_Address": "שושנה פרסיץ 9 תל-אביב יפו",
             "Parking_adress_eng":"Shoshana Persits St 9, Tel Aviv-Yafo, Israel",
@@ -626,7 +626,7 @@
             "Coordinates": {"lat":32.134124 , "lng":34.795300 }
     },
     {
-            "Parking_Id": 92,
+            "Parking_Id": 79,
             "Parking_Name": "לוחמים",
             "Parking_Address": "הלוחמים 15 תל-אביב יפו",
             "Parking_adress_eng":"'Ha-Lokhamim St 33, Holon, Israel",
@@ -634,7 +634,7 @@
             "Coordinates": {"lat":32.030274 , "lng":34.770650 }
     },
     {
-            "Parking_Id": 94,
+            "Parking_Id": 80,
             "Parking_Name": "אלוף",
             "Parking_Address": "אלוף פינת בן חיל תל אביב - יפו",
             "Parking_adress_eng":"Ben Khayil St 2, Tel Aviv-Yafo, Israel",
@@ -642,7 +642,7 @@
             "Coordinates": {"lat":32.052002 , "lng":34.797958 }
     },
     {
-            "Parking_Id": 95,
+            "Parking_Id": 81,
             "Parking_Name": "ליבר",
             "Parking_Address": "פינס 39 תל-אביב יפו",
             "Parking_adress_eng":"Pines St 41, Tel Aviv-Yafo, Israel",
@@ -650,7 +650,7 @@
             "Coordinates": {"lat":32.060151 , "lng": 34.768033}
     },
     {
-            "Parking_Id": 96,
+            "Parking_Id": 82,
             "Parking_Name": "מוזיאונים",
             "Parking_Address": "קלאוזנר 240 תל-אביב יפו",
             "Parking_adress_eng":"Jewish People Museum/Klausner, Tel Aviv-Yafo, Israel",
@@ -658,7 +658,7 @@
             "Coordinates": {"lat":32.114439 , "lng": 34.807553}
     },
     {
-            "Parking_Id": 97,
+            "Parking_Id": 83,
             "Parking_Name": "ארלוזורוב 17",
             "Parking_Address": "ארלוזורוב 17 תל-אביב יפו",
             "Parking_adress_eng":"Arlozorov St 17, Tel Aviv-Yafo, Israel",
