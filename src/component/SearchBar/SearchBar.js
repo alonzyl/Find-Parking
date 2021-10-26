@@ -38,9 +38,10 @@ export function SearchBar(props) {
 
 
   return (    
-    <div >
-      <div>
+    <>
+      <div className = "text">
         <h2>Get Directions:</h2>
+        <p>Enter your desired destination</p>
       </div>
       <Autocomplete
         onLoad = {onLoad}
@@ -59,6 +60,6 @@ export function SearchBar(props) {
       </Autocomplete>
 
       {destinationLocation.lat !== null? <DistanceFinder origin = {destinationLocation} parentCallBack = {handleCallBackOrigin}  />:null}
-    </div>
+    </>
   )}
 export default SearchBar;

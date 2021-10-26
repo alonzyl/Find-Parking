@@ -41,6 +41,7 @@
 
   .Directions {
     margin-left: 20px;
+    height: 80%;
   }
 
   .DirectionsTitle{
@@ -52,4 +53,10 @@
 
   .Directions {
     margin-left: 4vw;
+  }
+
+  .directionIcon {
+    height: 30px;
+    width: auto;
+    margin-right: 7px;
   }

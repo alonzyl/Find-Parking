@@ -2,9 +2,6 @@
     display: flex;
     flex:1;
     flex-direction: column;
-
-
-    
   }
 
  /* searchbox  */
@@ -26,18 +23,24 @@
 
   margin: auto;
   margin-top: 20px;
-  justify-content: center;
-  align-items: center;
+  margin-left: 4vw;
 }
 
+.text {
+  margin-top: 50px;
+  margin-left: 4vw;
+  margin-bottom: 0px;
+}
+.text p {
+  margin-top: 0px;
+}
 h2 {
-  color: #111; 
+  color: rgb(67, 109, 96) !important; 
   font-family: 'Helvetica Neue', sans-serif; 
   font-size: 35px; 
   font-weight: bold; 
   letter-spacing: -1px; 
   line-height: 1; 
-  margin-top: 50px;
-  margin-left: 4vw;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+
 }

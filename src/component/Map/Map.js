@@ -8,36 +8,13 @@ import markerLogo from './ParkingIcon.png'
 import startingIcon from './startingIcon.png'
 
 
-
-const containerStyle = {
-  width: '70vw',
-  height: '95vh'
-}
-const center = {
-    lat: 32.0853,
-    lng: 34.78118
-  }
-
-
 export function Map (props) {
   
     const [selectedParking, setSelectedParking] = useState(null); // selected marker in map
     const [responsee,setResponse] = useState()
 
-   
-    const directionsCallback = (response) => {
-        if (response !== null) {
-            if (response.status === 'OK') {
-                props.directionsCallBack(response.routes[0].legs[0].steps)
-                setResponse(response)                
-            } else {
-              console.log('response error: ', response)
-            }
-        }
-    }
-   
-    //load google maps api key 
-    useEffect( () => {
+     //load google maps api key 
+     useEffect( () => {
         <LoadScript
              googleMapsApiKey="AIzaSyCkmUyo0Nh8AGWrG_QSKmGVyiBuGA528cM">
         </LoadScript>
@@ -56,12 +33,29 @@ export function Map (props) {
             />
         )
     },[props.destination]);
+   
+    const directionsCallback = (response) => {
+        if (response !== null) {
+            if (response.status === 'OK') {
+                props.directionsCallBack(response.routes[0].legs[0].steps)
+                setResponse(response)                
+            } else {
+              console.log('response error: ', response)
+            }
+        }
+    }
 
     return (
         <div>
             <GoogleMap
-                mapContainerStyle={containerStyle}
-                center={center}
+                mapContainerStyle={{
+                    width: '70vw',
+                    height: '95vh'
+                  }}
+                center={{
+                    lat: 32.0853,
+                    lng: 34.78118
+                  }}
                 zoom={15}>
             {/* set marker for all parking */}
             {ParkingData.Parking.map(parkign => (
@@ -79,7 +73,7 @@ export function Map (props) {
                  />
             ))}
             {selectedParking &&(
-                //info window when selecting marker parking
+                // info window when selecting marker parking
                 <InfoWindow
                     onCloseClick={() => {
                         setSelectedParking(null);

@@ -10,9 +10,10 @@
 .searchBar {
   /* background-color: white ; */
   flex: 0 0 30vw;
-  box-shadow: 0 2px 0px 3px white, 0 -9px 0px 0px white, 12px 0 15px -15px rgb(0, 0, 0), -12px 0 15px -4px rgba(0, 0, 0, 0.8);
+  box-shadow: 12px 0 15px -15px rgb(0, 0, 0), -12px 0 15px -4px rgba(0, 0, 0, 0.8);
   z-index: 5;
   padding-top: 5vh;
+  background: linear-gradient(180deg, #ffffff, #d3e0ff);
 }
 .map {
   flex: 0 0 70vw;
@@ -24,17 +25,18 @@
   margin-top: 80px;
 }
 .NavigationBar{
-  background-color: rgb(78, 78, 78);
+  background-color: rgb(53, 53, 53);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  height: 5vh;
+  height: 6vh;
   z-index: 10;
+  padding-top: 2px;
   box-shadow:  12px 0 15px -15px rgb(0, 0, 0),  12px 0 15px -15px rgb(165, 0, 0), 12px 0 15px -15px rgb(238, 255, 0), -12px 0 15px -4px rgba(151, 151, 151, 0.8);
 }
 .NavigationBar h4 {
   color: white;
   margin-left: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 23px;
 }

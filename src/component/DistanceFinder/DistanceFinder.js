@@ -2,6 +2,8 @@
 import React, { useEffect,useState } from "react";
 import * as ParkingData from "../Data/Data.json"; 
 
+
+//logic functions for distance calculation
 export function DistanceFinder(props) {
     
     const [finalParking,setFinalParking] = useState(null);
@@ -10,15 +12,30 @@ export function DistanceFinder(props) {
     let listOfParking
     let datalength 
 
+    useEffect(() => {
+        if (props.origin.lat) {
+            handleData()
+        }
+    },[props.origin]);
+
+    useEffect(() => {
+        if (finalParking){
+            props.parentCallBack(finalParking)
+        }
+    },[finalParking]);
+
+
+
     const handleData = () => {
+        // Deviding the data to 24 parking lots for each list because api accepts only 24 each time.
+        // Fetching api and calling callback to handle the data from the api 
+
         datalength = Math.ceil(ParkingData.Parking.length/24) //the length of data separated for fetch
-        //list for fetching distance
         for (var i=1; i<=datalength;i++){
              listOfParking = ParkingData.Parking.slice(24*(i-1),i*24)
             for (var j =0;j<listOfParking.length;j++){
                 listOfParking[j] = listOfParking[j].Coordinates
             }
-            // set destination and origin before fetching
             const matrixOptions = {
                 destinations: listOfParking,
                 origins: [props.origin],
@@ -34,21 +51,16 @@ export function DistanceFinder(props) {
             return;
         }
         shortestParkingList.push(findShortestForCallBack(response))
-        //if finished searching 
-        if (shortestParkingList.length === datalength) {
-            console.log(shortestParkingList)
-            console.log("the adress of the shortest parking is",shortestroute(shortestParkingList))
+
+        if (shortestParkingList.length === datalength) { //if finished searching 
             convertToGeo(shortestroute(shortestParkingList))
-            
         }      
     }
 
     const findShortestForCallBack = (response) => {
-        let minValue ={adress: response.destinationAddresses[0], duration: response.rows[0].elements[0].duration } // the first response 
-        
+        let minValue = {adress: response.destinationAddresses[0], duration: response.rows[0].elements[0].duration} // the first response 
         response.rows[0].elements.map((individualResponse,index) => {
-            if (minValue.duration.value>individualResponse.duration.value)
-            {
+            if (minValue.duration.value>individualResponse.duration.value){
                 minValue= {adress:response.destinationAddresses[index], duration:individualResponse.duration}
             }
         })
@@ -56,50 +68,30 @@ export function DistanceFinder(props) {
     } 
     
     const shortestroute = (routeOption) => {
-        let closestParkinTemp = null
-
-        if (routeOption !== null )
-        {
+        let closestParkingToReturn = null
+        if (routeOption){
             routeOption.map(route => {
-                if (closestParkinTemp === null){
-                    closestParkinTemp = route
+                if (!closestParkingToReturn){
+                    closestParkingToReturn = route
                 }
-                else if (closestParkinTemp.duration.value > route.duration.value) {
-                    closestParkinTemp = route
+                else if (closestParkingToReturn.duration.value > route.duration.value) {
+                    closestParkingToReturn = route
                 }
             })
-        //return closestParkinTemp
-        return closestParkinTemp
         }
+        return closestParkingToReturn
     }
 
-    // convert adress to geo location 
+    // convert adress to lat and lng  
     const convertToGeo =  (adress) => {
-      
        ParkingData.Parking.map(park => {
-            if (park.Parking_adress_eng === adress.adress)
-            {
+            if (park.Parking_adress_eng === adress.adress) {
                 setFinalParking(park.Coordinates)
-                console.log("the adress is ", adress,"and the eng adress is ", park.Parking_adress_eng,park.Coordinates)
             }
        })
     }
-    
-    useEffect(() => {
-        if (props.origin.lat !== null ) {
-            handleData()
-        }
-    },[props.origin]);
 
-    useEffect(() => {
-        if (finalParking){
-            props.parentCallBack(finalParking)
-        }
-    },[finalParking]);
-
-
-    return  (shortestParkingList)
-
+    return  (null)
 }
 
 export default DistanceFinder;

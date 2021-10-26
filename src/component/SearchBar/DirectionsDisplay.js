@@ -1,5 +1,6 @@
 import React from 'react';
 import './DirectionsDisplay.css';
+import { RiDirectionFill } from "react-icons/ri";
 
 
 const handleData = (data) => {
@@ -17,8 +18,10 @@ export function DirectionsDisplay(props) {
     
     let data = handleData(props.directions);
     return (
+        
         <div className = "Directions">
-            <h2 className = "DirectionsTitle">Directions: </h2>
+            <h2 className = "DirectionsTitle"><RiDirectionFill className = "directionIcon" />Directions: </h2>
+            <p>The walking directions to your destination are</p>
             <div className = "info-Directions"> 
                 <ul>
                     {data}
