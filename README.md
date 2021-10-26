@@ -1,7 +1,7 @@
 
 # Project Title Ahozat-ahof Parking
 
-An app that helps you find the nearest Ahozat-ahof parking lot from you destination. coded with React,Javascript, html and css
+An app that helps you find the nearest Ahozat-ahof parking lot from your destination. coded with React, Javascript, HTML, and CSS
 
 ## API Reference
 npm install --save @react-google-maps/api
